@@ -14,3 +14,12 @@ do{          // el programa se ejecuta una vez
 }while(conteo < 3); //mientras la condicion sea menor a 3 se vuelve a ejecutar
 console.log("Fin del ciclo -do while-");
 
+//ciclo for
+
+for (let contando = 0; contando < 3; contando++) {
+    console.log(contando);
+}
+
+console.log("fin del ciclo for")
+
+
