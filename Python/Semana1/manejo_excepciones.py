@@ -1,6 +1,16 @@
-#bloque try exception
+
+resultado = None
 
 try:
-    10/0 #modificamos
+    a = int(input('Digite el primer numero: '))
+    b = int(input('Digite el segundo numero: '))
+    resultado = a / b #modificamos
+except TypeError as e:
+    print(f'TypeError - Ocurrio un error: {type(e)}')
+except ZeroDivisionError as e:
+    print(f'ZeroDivisionError - Ocurrio un error: {type(e)}')
 except Exception as e:
-    print(f'Ha ocurrido un error: {e}') #división entre cero
+    print(f'Exception - Ocurrio un error: {type(e)}')
+
+print(f'El resultado es: {resultado}')
+print('seguimos...')
