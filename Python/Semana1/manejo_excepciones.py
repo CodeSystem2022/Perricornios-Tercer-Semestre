@@ -12,4 +12,4 @@ except Exception as e:
     print(f'Exception Ocurrio un error : {e}')
 
 print(f'El resultado es {resultado}')
-print(f'seguimos..')
+print(f'seguimos...')
