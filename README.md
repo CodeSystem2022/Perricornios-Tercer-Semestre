@@ -12,7 +12,7 @@
 | ---- | ---- |
 | :pencil: semana 1 | *Noelia Romina Ruiz* |
 | :pencil: semana 2 | *Nadia Soledad Pereyra* |
-| :pencil: semana 3... |
+| :pencil: semana 3 | *Bruno Leandro Cosimano Abadie* |
 
 ### `Somos Equipo Perricornios:`
 #### :unicorn: Cosimano Abadie, Bruno Leandro.
