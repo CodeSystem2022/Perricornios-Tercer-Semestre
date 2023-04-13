@@ -1,5 +1,3 @@
-# Perricornios-Tercer-Semestre
-Carpeta de trabajos en Python, se debera crear una sub-carpeta semanal para realizar las actividades. 
 BUENAS NOCHES paso a dejar el mensaje por aqui: Necesito que antes de subir sus archivos a sus ramas,
 agreguen el  número de video que le tocó a cada uno.
 EJEMPLO: "manejo_archivos_Video3"
