@@ -7,10 +7,7 @@
 | CARPETA | RESPONSABLE DE CREARLA | ESTADO | 
 | ---- | ---- | ---- |
 | **Semana 1** | *Noelia Romina Ruiz* | ✔️ **SEMANA COMPLETA** |
-| **Semana 2** | *Nadia Soledad Pereyra* | ❌ ** ** |
-
-
-
+| **Semana 2** | *Nadia Soledad Pereyra* | ❌ **SIN ACTIVIDADES- ACTO UTN** |
 
 
 
