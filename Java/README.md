@@ -1,13 +1,17 @@
 ## *Programacion en Java Tercer Semestre*
 
-### 🦄 En esta a carpeta vamos creando una carpeta por semana
+![java](https://user-images.githubusercontent.com/92758405/232552178-8189c1dd-a439-4b88-8863-bf7cfab2be00.gif)
 
-### 🦄 dentro de la misma creamos subcarpetas para subir los archivos en orden
+
+### :pen: En esta a carpeta vamos creando una carpeta por semana
+
+### :pen: y adentro creamos subcarpetas para subir los archivos en orden
 
 | CARPETA | RESPONSABLE DE CREARLA | ESTADO | 
 | ---- | ---- | ---- |
 | **Semana 1** | *Noelia Romina Ruiz* | ✔️ **SEMANA COMPLETA** |
 | **Semana 2** | *Nadia Soledad Pereyra* | ❌ **SIN ACTIVIDADES- ACTO UTN** |
+| **Semana 3** | *Bruno Leandro Cosimano Abadie* |   |
 
 
 
