@@ -1,5 +1,5 @@
 package test;
-import domain.Persona;
+import Persona;
 
 public class TestBloqueInicializacion {
 
