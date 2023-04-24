@@ -1,5 +1,5 @@
 package test;
-import Persona;
+import clases.Persona;
 
 public class TestBloqueInicializacion {
 
