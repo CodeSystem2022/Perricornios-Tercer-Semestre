@@ -2,4 +2,4 @@
 
 # Actividades Reasignadas
 ## Python
-#### 1.5 Comenzamos con las pruebas ingresando las otras clases, parte 1 | CARLOS | Gabriel
+#### 1.5 Comenzamos con las pruebas ingresando las otras clases, parte 1 | CARLOS -> Gabriel
