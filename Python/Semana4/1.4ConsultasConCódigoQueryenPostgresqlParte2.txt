@@ -1,3 +1,0 @@
-SELECT * FROM persona
-UPDATE persona SET nombre = 'Geronimo', apellido = 'Rulli', email = 'rulli@gmail.com'
-DELETE FROM persona WHERE id_persona = 3
