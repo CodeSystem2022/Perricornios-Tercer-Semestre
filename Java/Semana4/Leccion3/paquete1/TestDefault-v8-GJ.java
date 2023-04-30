@@ -11,4 +11,6 @@ public class TestDefault {
         Clase2 clase2 = new Clase2(); //creamos un objeto
         
     }
+    
+    
 }
