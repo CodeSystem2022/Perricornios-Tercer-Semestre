@@ -27,5 +27,7 @@ class Clase2 extends Clase1{ //clase default o package, con la ausencia de modif
     //Método void
     void metodoDefault(){
         System.out.println("Método Default.");
+        
+        
     }
 }
