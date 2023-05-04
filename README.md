@@ -22,6 +22,7 @@
 | | | 1.4 Manejo de bloques de código - V7 | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | :pencil: 4 | *Gabriel Juan Alejandro Juhasz* | **SEMANA COMPLETA** |
 | :pencil: 5 | *Juan Ignacio Encinas* |
+| :pencil: 6 | *Braian Guzmán Echarri* |
 
 ### `Somos Equipo Perricornios:`
 #### :unicorn: Cosimano Abadie, Bruno Leandro.
