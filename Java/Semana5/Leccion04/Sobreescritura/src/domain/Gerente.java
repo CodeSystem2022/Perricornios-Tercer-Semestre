@@ -12,4 +12,10 @@ public class Gerente extends Empleado{
         this.departamento = departamento;
     }
     
+    //Sobreescribimos el metodo
+    @Override  //Override pertenece a las anotaciones de java
+    public String obtenerDetalles(){
+        return super.obtenerDetalles()+", Departamento : "+ this.departamento;
+    }
+    
 }
