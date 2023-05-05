@@ -11,9 +11,9 @@
 | ---- | ---- | ---- |
 | **Semana 1** | *Noelia Romina Ruiz* | ✔️ **SEMANA COMPLETA** |
 | **Semana 2** | *Nadia Soledad Pereyra* | ❌ **SIN ACTIVIDADES- ACTO UTN** |
-| **Semana 3** | *Bruno Leandro Cosimano Abadie* |   |
-
-
-
-
-
+| **Semana 3** | *Bruno Leandro Cosimano Abadie* | ❌ **SEMANA INCOMPLETA➡️ ACTIVIDADES REASIGNADAS** |
+| **Semana 4** | *Gabriel Juan Alejandro Juhasz* | ✔️ **SEMANA COMPLETA** |
+| **Semana 5** | *Juan Ignacio Encinas* | 🔛 **En curso** |
+| **Semana 6** | *Braian Guzmán Echarri* | 🚀 **Proximamente** |
+| **Semana 7** | |
+| **Semana 8** | |
