@@ -1,7 +1,7 @@
 
 package test;
 
-import domain.Gerente;
+import domain.*;
 
 public class TestSobreescritura {
     public static void main(String[] args) {
