@@ -20,8 +20,9 @@
 | | **JAVA** | 1.2 Manejo de Enumeraciones (enum) - V3 | :x: CARLOS FERNANDO VILLALON | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | | | 1.3 Pruebas de enum, con la creación de enum Continentes - V6 | :x: FACUNDO BENJAMÍN MÉNDEZ | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | | | 1.4 Manejo de bloques de código - V7 | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
-| :pencil: 4 | *Gabriel Juan Alejandro Juhasz* |
+| :pencil: 4 | *Gabriel Juan Alejandro Juhasz* | **SEMANA COMPLETA** |
 | :pencil: 5 | *Juan Ignacio Encinas* |
+| :pencil: 6 | *Braian Guzmán Echarri* |
 
 ### `Somos Equipo Perricornios:`
 #### :unicorn: Cosimano Abadie, Bruno Leandro.
