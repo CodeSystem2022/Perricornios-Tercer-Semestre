@@ -20,7 +20,9 @@ public class Gerente extends Empleado{
     
 }
 
-/* VIDEO 5 POLIMORFISMO PARTE 2- e
+
+
+/* VIDEO 5 POLIMORFISMO PARTE 2-
 Aca el método no podria ser más restrictivo que en la clase padre:
 en el metodo obtener detalles no podriamos cambiar su modificador de acceso a private, porque eso es mas restrictivo:
     
@@ -29,9 +31,10 @@ en el metodo obtener detalles no podriamos cambiar su modificador de acceso a pr
 @Override 
     private String obtenerDetalles(){
         return super.obtenerDetalles()+", Departamento: "+this.departamento;
-Con este código saltaria el error
 
+Con este código saltaria el error
 Sí se puede utilizar el mismo tipo de la clase padre: protected
+
 
 @Override 
     protected String obtenerDetalles(){
