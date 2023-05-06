@@ -20,6 +20,4 @@ en la clase hija el modificador de acceso no puede ser mas restrictivo:*/
     public static void imprimir(Empleado empleado) {
         System.out.println("Empleado= "+ empleado.obtenerDetalles());
     }
-
 }
-
