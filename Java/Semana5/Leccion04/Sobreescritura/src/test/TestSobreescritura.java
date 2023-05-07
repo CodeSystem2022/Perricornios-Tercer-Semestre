@@ -19,7 +19,12 @@ public class TestSobreescritura {
         Gerente gerente1 = new Gerente("Jose", 5000, "Sistemas");
         imprimir(gerente1);
     }
+    //public static void imprimir(Empleado empleado){
+       // System.out.println("empleado= "+ empleado.obtenerDetalles());
+   // }
     public static void imprimir(Empleado empleado){
-        System.out.println("empleado= "+ empleado.obtenerDetalles());
+        String detalles = empleado.ObtenerDetalles();
+        System.out.println("detalles = " + detalles);
     }
+        
 }
