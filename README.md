@@ -1,18 +1,19 @@
+## ${\color{mediumorchid	}Perricornios-Tercer-Semestre}$
+
 ![bournout](https://user-images.githubusercontent.com/111775575/230744405-58a87638-fcff-4885-8a94-8463a0996a3e.gif)
 
-## Perricornios-Tercer-Semestre
 ### :unicorn: `Repositorio general`
-####  :computer: Laboratorio: Python y JavaScript
-####  :computer: Programación: Java
+####  :computer: ${\color{blue}Laboratorio: Python}$ y ${\color{yellow}JavaScript}$
+####  :computer: ${\color{red}Programación: Java}$
 
 ### :unicorn: `Tenemos división de materias por carpetas`
-#### Dentro de cada materia nos organizamos por semanas
+#### :arrow_right: Dentro de cada materia nos organizamos por semanas :arrow_left:
 
 | **Semana** | **Scrum Master** | **Anotaciones** |  |  | 
 | ---- | ---- | --- | --- | --- | 
-| :pencil: 1 | *Noelia Romina Ruiz* | **SEMANA COMPLETA** |
-| :pencil: 2 | *Nadia Soledad Pereyra* | **SEMANA COMPLETA** |
-| :pencil: 3 | *Bruno Leandro Cosimano Abadie* | **SEMANA INCOMPLETA** | **ASIGNADO A**| **REASIGNADO A** |
+| :pencil2: **1** | *Noelia Romina Ruiz* | **SEMANA COMPLETA** |
+| :pencil2: **2** | *Nadia Soledad Pereyra* | **SEMANA COMPLETA** |
+| :pencil2: **3** | *Bruno Leandro Cosimano Abadie* | **SEMANA INCOMPLETA** | **ASIGNADO A**| **REASIGNADO A** |
 | | **JAVASCRIPT** | 1.1 Introducción a Funciones | :x: FACUNDO BENJAMÍN MÉNDEZ | :heavy_check_mark: BRUNO LEANDRO COSIMANO ABADIE | 
 | | | 1.6 Funciones flecha | :x: CARLOS FERNANDO VILLALON | :heavy_check_mark: BRUNO LEANDRO COSIMANO ABADIE |
 | | | 1.8 Concepto hoisting | :x: FACUNDO BENJAMÍN MÉNDEZ | :heavy_check_mark: BRUNO LEANDRO COSIMANO ABADIE |
@@ -20,16 +21,17 @@
 | | **JAVA** | 1.2 Manejo de Enumeraciones (enum) - V3 | :x: CARLOS FERNANDO VILLALON | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | | | 1.3 Pruebas de enum, con la creación de enum Continentes - V6 | :x: FACUNDO BENJAMÍN MÉNDEZ | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | | | 1.4 Manejo de bloques de código - V7 | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
-| :pencil: 4 | *Gabriel Juan Alejandro Juhasz* | **SEMANA COMPLETA** |
-| :pencil: 5 | *Juan Ignacio Encinas* |
-| :pencil: 6 | *Braian Guzmán Echarri* |
+| :pencil2: **4** | *Gabriel Juan Alejandro Juhasz* | **SEMANA COMPLETA** |
+| :pencil2: **5** | *Juan Ignacio Encinas* | **SEMANA COMPLETA** |
+| :pencil2: **6** | *Braian Guzmán Echarri* | |
+| :pencil2: **7** | |
 
-### `Somos Equipo Perricornios:`
-#### :unicorn: Cosimano Abadie, Bruno Leandro.
-#### :unicorn: Echarri, Brian Guzmán.
-#### :unicorn: Encinas, Juan Ignacio.
-#### :unicorn: Juhasz, Gabriel Juan Alejandro.
-#### :unicorn: Méndez, Facundo Benjamín.
-#### :unicorn: Pereyra, Nadia soledad.
-#### :unicorn: Ruiz, Noelia Romina.
-#### :unicorn: Villalon, Carlos Fernando.
+### ${\color{yellow}Somos Equipo Perricornios:}$
+#### :unicorn: ${\color{fuchsia}Pereyra, Nadia soledad.}$
+#### :unicorn: ${\color{fuchsia}Ruiz, Noelia Romina.}$
+#### :unicorn: ${\color{turquoise}Cosimano Abadie, Bruno Leandro.}$
+#### :unicorn: ${\color{turquoise}Echarri, Brian Guzmán.}$
+#### :unicorn: ${\color{turquoise}Encinas, Juan Ignacio.}$
+#### :unicorn: ${\color{turquoise}Juhasz, Gabriel Juan Alejandro.}$
+#### :unicorn: ${\color{turquoise}Méndez, Facundo Benjamín.}$
+#### :unicorn: ${\color{turquoise}Villalon, Carlos Fernando.}$
