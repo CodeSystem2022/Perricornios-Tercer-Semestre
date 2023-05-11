@@ -86,6 +86,25 @@ console.log(personaString);
 
 
 //VIDEO 3 ~ GABRIEL
+//5.2 - Constructores de objetos
+
+//Reutilizamos el codigo con Constructores que nos permiten crear un nuevo objeto persona
+//Para no repetir los atributos y metodos creamos un constructor
+
+//definimos una funcion
+function Persona3(nombre, apellido, email){ //constructor donde definimos las propiedades
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+}
+// creamos objetos
+let padre = new Persona3('Leo', 'Lopez', 'l.lopez@gmail.com'); 
+padre.nombre = 'Fabian'; //modificamos el nombre del propio objeto
+console.log(padre);
+//ninguno de los objetos comparten infomacion.
+let madre = new Persona3('Laura', 'Contrera', 'l.contrera@gmail.com');
+madre.email = 'contreral@gmail.com';
+console.log(madre);
 
 
 //VIDEO 4 ~ CARLOS
