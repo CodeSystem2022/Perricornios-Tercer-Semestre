@@ -96,18 +96,25 @@ function Persona3(nombre, apellido, email){ //constructor donde definimos las pr
     this.nombre = nombre;
     this.apellido = apellido;
     this.email = email;
+    this.nombreCompleto = function(){
+        return this.nombre+" "+this.apellido;
+    }
 }
+//VIDEO 4 ~ CARLOS
+//5.3  Agregar métodos al constructor del objeto
 // creamos objetos
 let padre = new Persona3('Leo', 'Lopez', 'l.lopez@gmail.com'); 
 padre.nombre = 'Fabian'; //modificamos el nombre del propio objeto
 console.log(padre);
+console.log(padre.nombreCompleto()); //Utilizamos la función
 //ninguno de los objetos comparten infomacion.
 let madre = new Persona3('Laura', 'Contrera', 'l.contrera@gmail.com');
 madre.email = 'contreral@gmail.com';
 console.log(madre);
+console.log(madre.nombreCompleto());
 
 
-//VIDEO 4 ~ CARLOS
+
 
 
 // VIDEO 5 ~ NOE
