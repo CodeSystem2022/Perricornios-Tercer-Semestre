@@ -13,11 +13,20 @@ try:
             #cursor = conexion.cursor() #recuperamos el registro
 
             # Creamos la sentencia que queremos enviar
-            sentencia = 'SELECT * FROM persona ORDER BY id_persona ASC' #cadena para la variable sentencia
-            cursor.execute(sentencia) #ejecutamos la sentencia
+            #sentencia = 'SELECT * FROM persona ORDER BY id_persona ASC' #cadena para la variable sentencia
+            #sentencia = 'SELECT id_persona, nombre FROM persona ' #Especificamos de donde queremos obtener los datos (el * indica todo) con esta sentencia recuperamos el id y el nombre
+            #sentencia = 'SELECT * FROM persona WHERE id_persona = 2'  #recupera los datos del id 1 
+            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' #Placeholder o parámetro posicional - (sustituye el código duro 1-2 por este parámetro que luego se reemplazara por una variable) 
+            #id_persona = 2 #Definimos el parámetro que le pedimos en el placeholder 
+            id_persona = input ('Ingrese un número para el id_persona que desea observar: ') #Le pedimos al usuario que ingrese el valor de lo que quiere ver 
+            
+
+            cursor.execute(sentencia, (id_persona,)) #ejecutamos la sentencia
 
             #vamos a recuperar los registros en una lista, donde cada registro es una tupla
-            registros = cursor.fetchall() #método que recupera todos los registros de la sentencia ejecutada
+            #registros = cursor.fetchall() #método que recupera todos los registros de la sentencia ejecutada
+            registros = cursor.fetchone() #Método fetchone: Solo busca un registro, desaparece la lista y apunta a la tupla. 
+            
             print(registros) #imprimimos los registros de la tabla persona
 except Exception as e:
     print(f'Ocurrió un error: {e}')

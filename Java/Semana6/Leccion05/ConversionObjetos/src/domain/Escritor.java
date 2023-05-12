@@ -20,7 +20,7 @@ public class Escritor extends Empleado{
     
     @Override
     public String toString(){
-        return "Escritor( " + "tipoEscritura=" + tipoEscritura + ") " + super.toString();
+        return "Escritor{ " + "tipoEscritura=" + tipoEscritura + '}'+" " + super.toString();
     }
     
     //Método get
