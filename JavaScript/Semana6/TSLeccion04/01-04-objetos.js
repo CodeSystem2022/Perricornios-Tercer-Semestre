@@ -8,11 +8,23 @@ let persona = { //se crea un objeto en memoria
     nombre: "Carlos",
     apellido: "Gil",
     email: "egil@gmail.com",
-    edad:30,
-
-    //se agregan mètodos a los objetos
+    edad:28,
+    idioma: 'ES',
+    //Agregamos un metodo set y get para que el Uppercase convierta a mayúscula el idioma
+    //Garantizamos que la infomación que se almacena en el objeto, esta ya convertida a mayúscula 
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
+    
+    //se agregan métodos a los objetos
     nombreCompleto: function(){ //metodo
         return this.nombre + " " + this.apellido; //apunta a las propiedades del mismo objeto
+    },
+    get nombreEdad(){ //Este es el metodo get
+        return 'El nombre es: ' + this.nombre + ', Edad: ' + this.edad;
     }
 }
 
@@ -83,6 +95,12 @@ console.log(personaString);
 //OBJETOS PARTE 2 - CONTINÚA EL MISMO ARCHIVO DE CLASE ANTERIOR
 
 // VIDEO 1 Y VIDEO 2 ~ NADIA
+console.log('Comenzamos a utilizar el método get');
+console.log(persona.nombreEdad);
+
+console.log('Comenzamos con el método get y set para idiomas');
+persona.lang = 'en';
+console.log(persona.lang);
 
 
 //VIDEO 3 ~ GABRIEL
