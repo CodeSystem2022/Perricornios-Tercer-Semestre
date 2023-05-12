@@ -29,7 +29,7 @@
 | ${\color{orange} Equipo - Perricornios}$ | ${\color{orange} Link - GitHub}$ |
 | --- | --- |
 | :unicorn: ${\color{magenta}Pereyra, Nadia soledad.}$ | [Nadia Soledad Pereyra](https://github.com/NaSP32) |
-| :unicorn: ${\color{magenta}Ruiz, Noelia Romina.}$ | [Noelia Romina Ruiz](https://github.com/Noe3467) - [Noelia Romina Ruiz](https://github.com/Noelia-Ruiz) | 
+| :unicorn: ${\color{magenta}Ruiz, Noelia Romina.}$ | [Noelia Romina Ruiz](https://github.com/Noe3467) - [Noelia Ruiz](https://github.com/Noelia-Ruiz) | 
 | :unicorn: ${\color{cyan}Cosimano Abadie, Bruno Leandro.}$ | [Bruno Cosimano](https://github.com/BrunoLCA95)
 | :unicorn: ${\color{cyan}Echarri, Brian Guzmán.}$ | [Braian Guzman Echarri](https://github.com/bguzmanech)
 | :unicorn: ${\color{cyan}Encinas, Juan Ignacio.}$ | [Juan Ignacio Encinas](https://github.com/asterisko19)
