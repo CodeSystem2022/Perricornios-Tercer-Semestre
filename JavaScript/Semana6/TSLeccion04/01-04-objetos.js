@@ -173,3 +173,8 @@ let miFuncion1 = new Function(); //después de 'new' todo se considera Objeto
 
 //caso function 2
 let mifuncion2 = function(){}; //notación simplificada y recomendada
+
+// VIDEO 5 - BRAIAN - El uso de apply
+//Método Apply
+let arreglo = ['Ing.', '5492378473'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
