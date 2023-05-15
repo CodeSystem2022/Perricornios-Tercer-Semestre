@@ -122,13 +122,15 @@ function Persona3(nombre, apellido, email){ //constructor donde definimos las pr
 //5.3  Agregar métodos al constructor del objeto
 // creamos objetos
 let padre = new Persona3('Leo', 'Lopez', 'l.lopez@gmail.com'); 
-padre.nombre = 'Fabian'; //modificamos el nombre del propio objeto
+padre.nombre = 'Luis'; //modificamos el nombre del propio objeto
+padre.telefono = '5492618282821'; //Una propiedad exclusiva del objeto padre
 console.log(padre);
 console.log(padre.nombreCompleto()); //Utilizamos la función
 //ninguno de los objetos comparten infomacion.
 let madre = new Persona3('Laura', 'Contrera', 'l.contrera@gmail.com');
 madre.email = 'contreral@gmail.com';
 console.log(madre);
+console.log(madre.telefono); // La propiedad no esta definida
 console.log(madre.nombreCompleto());
 
 
@@ -177,4 +179,10 @@ let mifuncion2 = function(){}; //notación simplificada y recomendada
 // VIDEO 5 - BRAIAN - El uso de apply
 //Método Apply
 let arreglo = ['Ing.', '5492378473'];
-console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+
+// VIDEO 6 - FACUNDO - uso de prototype
+Persona3.prototype.telefono = '2618383832';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '5492618383832';
+console.log(madre.telefono);
