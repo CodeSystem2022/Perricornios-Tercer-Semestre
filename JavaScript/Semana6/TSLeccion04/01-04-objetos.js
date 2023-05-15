@@ -133,21 +133,7 @@ console.log(madre);
 console.log(madre.telefono); // La propiedad no esta definida
 console.log(madre.nombreCompleto());
 
-//Uso de call
-let persona4 = {
-    nombre: 'Juan',
-    apellido: 'Perez',
-    nombreCompleto2: function(titulo, telefono){
-        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
-    }
-}
-let persona5 = {
-    nombre: 'Carlos'
-    apellido: 'Lara'
-}
 
-console.log(persona4.nombreCompleto2('Lic.', 5492618484845)); Lic. : Juan Perez 5492618484845
-console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492618585856')); Ing.: Carlos Lara 5492618585856
 
 
 
