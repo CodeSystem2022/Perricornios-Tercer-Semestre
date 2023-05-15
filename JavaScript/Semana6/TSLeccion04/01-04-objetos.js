@@ -133,23 +133,6 @@ console.log(madre);
 console.log(madre.telefono); // La propiedad no esta definida
 console.log(madre.nombreCompleto());
 
-//Uso de call
-let persona4 = {
-    nombre: 'Juan',
-    apellido: 'Perez',
-    nombreCompleto2: function(titulo, telefono){
-        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
-    }
-}
-let persona5 = {
-    nombre: 'Carlos'
-    apellido: 'Lara'
-}
-
-console.log(persona4.nombreCompleto2('Lic.', 5492618484845)); Lic. : Juan Perez 5492618484845
-console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492618585856')); Ing.: Carlos Lara 5492618585856
-
-
 
 // VIDEO 5 ~ NOE
 //Diferentes formas de crear objetos, se recomiendan las segundas opciones, no las formales.
@@ -190,9 +173,6 @@ let miFuncion1 = new Function(); //después de 'new' todo se considera Objeto
 //caso function 2
 let mifuncion2 = function(){}; //notación simplificada y recomendada
 
-// VIDEO 5 - BRAIAN - El uso de apply
-//Método Apply
-let arreglo = ['Ing.', '5492378473'];
 
 // VIDEO 6 - FACUNDO - uso de prototype
 Persona3.prototype.telefono = '2618383832';
@@ -200,3 +180,26 @@ console.log(padre);
 console.log(madre.telefono);
 madre.telefono = '5492618383832';
 console.log(madre.telefono);
+
+
+//Uso de call - Juani - Video 7 
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
+    }
+}
+let persona5 = {
+    nombre: 'Carlos'
+    apellido: 'Lara'
+}
+
+console.log(persona4.nombreCompleto2('Lic.', 5492618484845)); Lic. : Juan Perez 5492618484845
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492618585856')); Ing.: Carlos Lara 5492618585856
+
+
+// VIDEO 8 - BRAIAN - El uso de apply
+//Método Apply
+let arreglo = ['Ing.', '5492378473'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
