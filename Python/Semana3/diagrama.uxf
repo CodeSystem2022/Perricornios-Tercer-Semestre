@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>40</x><y>30</y><w>230</w><h>240</h></coordinates><panel_attributes>dominio
+-
+
+group=group-0</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>110</y><w>210</w><h>130</h></coordinates><panel_attributes>Pelicula
+Package::dominio
+--
+- nombre: str
+--
++ __str__()
+--
+Responsabilidades:
+-- Representa un objeto Pelicula
+group=group-0</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>40</y><w>230</w><h>250</h></coordinates><panel_attributes>servicio
+-
+
+
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>120</y><w>210</w><h>160</h></coordinates><panel_attributes>CatalogoPeliculas
+--
++ ruta_archivo: str &lt;static&gt;
+--
++ agregar_pelicula(Pelicula) &lt;static&gt;
++ listar_peliculas() &lt;static&gt;
++ eliminar() &lt;static&gt;
+--
+Responsabilidades:
+-- Realizar las operaciones sobre
+			el archivo de peliculas.txt
+group=group-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>150</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+&lt;agrega&gt;</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>310</y><w>210</w><h>130</h></coordinates><panel_attributes>test_catalogo_peliculas
+--
+Responsibilidades:
+-- Contiene un menu con 4 opciones
+1) Agregar pelicula
+2) Listar peliculas
+3) Eliminar archivo de peliculas
+4) Salir</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>0</y><w>670</w><h>470</h></coordinates><panel_attributes>catalogo_peliculas
+--</panel_attributes><additional_attributes></additional_attributes></element></diagram>
