@@ -14,15 +14,17 @@ conexion = bd.connect(user = 'postgres', password = 'admin', host = '127.0.0.1',
 #Para observar el concepto de transacciones, no utilizamos el with conexion y lo hacemos de manera manual:
 
 try:
-    conexion.autocommit = False #Comprobamos el concepto de transacciones, para qe no se guarde de manera automática
+    # conexion.autocommit = False # esto no debe estar, le indicamos que no se guarde automaticamente
     cursor = conexion.cursor()
-    sentencia = 'INSERT INTO persona(nombre, apellido, email) VALUES (%s, %s, %s)' #La sentencia hacia la bd
-    valores = ('María', 'Esparza', 'mesparza@mail.com')
+    sentencia = 'INSERT INTO persona(nombre, apellido, email)VALUES(%s, %s, %s)'
+    valores = ('Maria', 'Esparza', 'mesparzaœmail.com')
     cursor.execute(sentencia, valores)
-    print('Termina la transacción') 
+    conexion.commit() # Realizamos el commit manualmente
+    print('Termina la transaccion')
 
 except Exception as e:
-    print(f'Ocurrió un error: {e}')
+    conexion.rollback()  # agregamos el rollback
+    print(f'Ocurrio un error, se hizo un rollback: {e}')
 finally:
     #cerramos la conexion a la base de datos, tenemos abierto el objeto de tipo cursor
     conexion.close()
