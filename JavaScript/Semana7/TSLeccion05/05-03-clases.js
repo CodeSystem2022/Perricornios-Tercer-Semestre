@@ -1,5 +1,9 @@
 //No se puede crear un objeto cuya clase no sea definida o inicializada antes de su creacion
-let persona3 = new Persona('Carla', 'Ponce');
+//let persona3 = new Persona('Carla', 'Ponce'); Si dejamos ésta linea, el código daría error, porque estamos 
+//intentando crear un objeto de una clase que aún no está definida. Persona is not defined.
+
+//HOISTING Y CLASES: A diferencia de las funciones, con las clases No se aplica el concepto, 
+//primero hay que definir la clase, para poderla utilizar. 
 
 class Persona{ //Definimos la clase.
     constructor(nombre, apellido){ //Creamos el método constructor.
