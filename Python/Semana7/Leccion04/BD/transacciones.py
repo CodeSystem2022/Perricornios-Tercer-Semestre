@@ -1,16 +1,3 @@
-import psycopg2 as bd
-
-
-conexion = bd.connect(
-    user='postgres',
-    password='admin',
-    host='127.0.0.1',
-    port='5432',
-    database='test_bd'
-)
-
-print(conexion)
-
 import psycopg2 as bd #Renombramos e import para usar bd
 
 #Creamos la variable para la conexion, ahora usamos bd.conect:
