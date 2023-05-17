@@ -1,11 +1,20 @@
 class Persona{ //Definimos la clase.
     constructor(nombre, apellido){ //Creamos el método constructor.
-        this.nombre = nombre; //Declaramos el atributo "nombre".
-        this.apellido = apellido; //Declaramos el atributo "apellido".
+        this._nombre = nombre; //Declaramos el atributo "nombre".
+        this._apellido = apellido; //Declaramos el atributo "apellido".
+    }
+  
+    //Método get: NO puede llamarse igual que la propiedad
+    //por eso agregamos un _ adelante de los atributos (propiedades)
+        get nombre(){
+          return this._nombre;
     }
 }
 
-Let persona1 = new Persona("Martín, "Perez"); //Creamos el objeto "persona1".
-console.log(persona1); //Mostramos objeto persona1
-Let persona2 = new Persona("Carlos,"Lara"); //Creamos el objeto "persona2".
-console.log(persona2); //Mostramos objeto persona2
+let persona1 = new Persona("Martín", "Perez"); //Creamos el objeto "persona1".
+console.log(persona1.nombre); //llamamos al método get sin necesidad de usar ()
+//console.log(persona1); //Mostramos objeto persona1
+let persona2 = new Persona("Carlos","Lara"); //Creamos el objeto "persona2".
+console.log(persona2.nombre);
+//console.log(persona2); //Mostramos objeto persona2
+
