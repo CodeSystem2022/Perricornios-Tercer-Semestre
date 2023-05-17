@@ -1,0 +1,3 @@
+![python](https://user-images.githubusercontent.com/111775575/232355591-80418312-05b6-444a-875a-09a5fe252e28.gif)
+
+` DEJAMOS ESTE ESPACIO PARA ANOTACIONES ANOTACIONES `

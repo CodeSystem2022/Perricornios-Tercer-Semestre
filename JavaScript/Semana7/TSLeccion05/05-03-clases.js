@@ -3,11 +3,11 @@ class Persona{ //Definimos la clase.
         this._nombre = nombre; //Declaramos el atributo "nombre".
         this._apellido = apellido; //Declaramos el atributo "apellido".
     }
-
+  
     //Método get: NO puede llamarse igual que la propiedad
     //por eso agregamos un _ adelante de los atributos (propiedades)
-    get nombre(){
-        return this._nombre;
+        get nombre(){
+          return this._nombre;
     }
 }
 
@@ -17,3 +17,4 @@ console.log(persona1.nombre); //llamamos al método get sin necesidad de usar ()
 let persona2 = new Persona("Carlos","Lara"); //Creamos el objeto "persona2".
 console.log(persona2.nombre);
 //console.log(persona2); //Mostramos objeto persona2
+

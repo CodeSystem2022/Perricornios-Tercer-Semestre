@@ -8,11 +8,23 @@ let persona = { //se crea un objeto en memoria
     nombre: "Carlos",
     apellido: "Gil",
     email: "egil@gmail.com",
-    edad:30,
-
-    //se agregan mètodos a los objetos
+    edad:28,
+    idioma: 'ES',
+    //Agregamos un metodo set y get para que el Uppercase convierta a mayúscula el idioma
+    //Garantizamos que la infomación que se almacena en el objeto, esta ya convertida a mayúscula 
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
+    
+    //se agregan métodos a los objetos
     nombreCompleto: function(){ //metodo
         return this.nombre + " " + this.apellido; //apunta a las propiedades del mismo objeto
+    },
+    get nombreEdad(){ //Este es el metodo get
+        return 'El nombre es: ' + this.nombre + ', Edad: ' + this.edad;
     }
 }
 
@@ -83,12 +95,43 @@ console.log(personaString);
 //OBJETOS PARTE 2 - CONTINÚA EL MISMO ARCHIVO DE CLASE ANTERIOR
 
 // VIDEO 1 Y VIDEO 2 ~ NADIA
+console.log('Comenzamos a utilizar el método get');
+console.log(persona.nombreEdad);
+
+console.log('Comenzamos con el método get y set para idiomas');
+persona.lang = 'en';
+console.log(persona.lang);
 
 
 //VIDEO 3 ~ GABRIEL
+//5.2 - Constructores de objetos
 
+//Reutilizamos el codigo con Constructores que nos permiten crear un nuevo objeto persona
+//Para no repetir los atributos y metodos creamos un constructor
 
+//definimos una funcion
+function Persona3(nombre, apellido, email){ //constructor donde definimos las propiedades
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto = function(){
+        return this.nombre+" "+this.apellido;
+    }
+}
 //VIDEO 4 ~ CARLOS
+//5.3  Agregar métodos al constructor del objeto
+// creamos objetos
+let padre = new Persona3('Leo', 'Lopez', 'l.lopez@gmail.com'); 
+padre.nombre = 'Luis'; //modificamos el nombre del propio objeto
+padre.telefono = '5492618282821'; //Una propiedad exclusiva del objeto padre
+console.log(padre);
+console.log(padre.nombreCompleto()); //Utilizamos la función
+//ninguno de los objetos comparten infomacion.
+let madre = new Persona3('Laura', 'Contrera', 'l.contrera@gmail.com');
+madre.email = 'contreral@gmail.com';
+console.log(madre);
+console.log(madre.telefono); // La propiedad no esta definida
+console.log(madre.nombreCompleto());
 
 
 // VIDEO 5 ~ NOE
@@ -129,3 +172,34 @@ let miFuncion1 = new Function(); //después de 'new' todo se considera Objeto
 
 //caso function 2
 let mifuncion2 = function(){}; //notación simplificada y recomendada
+
+
+// VIDEO 6 - FACUNDO - uso de prototype
+Persona3.prototype.telefono = '2618383832';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '5492618383832';
+console.log(madre.telefono);
+
+
+//Uso de call - Juani - Video 7 
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
+    }
+}
+let persona5 = {
+    nombre: 'Carlos'
+    apellido: 'Lara'
+}
+
+console.log(persona4.nombreCompleto2('Lic.', 5492618484845)); Lic. : Juan Perez 5492618484845
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492618585856')); Ing.: Carlos Lara 5492618585856
+
+
+// VIDEO 8 - BRAIAN - El uso de apply
+//Método Apply
+let arreglo = ['Ing.', '5492378473'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
