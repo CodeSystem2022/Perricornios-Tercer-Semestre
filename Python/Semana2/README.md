@@ -1,0 +1,1 @@
+Trabajos a realizarse durante la semana 2 de clases en Python master: Nadia Pereyra 
