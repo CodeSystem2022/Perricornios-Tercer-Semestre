@@ -1,3 +1,6 @@
+//No se puede crear un objeto cuya clase no este definida o inicializada antes de la creacion del objeto
+let persona3 = new Persona('Carla', 'Ponce');
+
 class Persona{ //Definimos la clase.
     constructor(nombre, apellido){ //Creamos el método constructor.
         this._nombre = nombre; //Declaramos el atributo "nombre".
