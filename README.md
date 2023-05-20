@@ -23,8 +23,9 @@
 | | | 1.4 Manejo de bloques de código - V7 | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | 👨‍💻 **4** | *Gabriel Juan Alejandro Juhasz* | **SEMANA COMPLETA** |
 | 👨‍💻 **5** | *Juan Ignacio Encinas* | **SEMANA COMPLETA** |
-| 👨‍💻 **6** | *Braian Guzmán Echarri* | **EN CURSO** |
-| 👨‍💻 **7** | *Carlos Fernando Villalón* | |
+| 👨‍💻 **6** | *Braian Guzmán Echarri* | **SEMANA COMPLETA** |
+| 👨‍💻 **7** | *Carlos Fernando Villalón* | **EN CURSO** |
+| 👨‍💻 **8** | *Facundo Benjamín Méndez* | **22/5 al 28/5** |
 
 | ${\color{orange} Equipo - Perricornios}$ | ${\color{orange} Link - GitHub}$ |
 | --- | --- |
