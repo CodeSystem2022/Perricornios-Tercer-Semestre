@@ -18,6 +18,13 @@ class Persona{ //Definimos la clase.
     set nombre(nombre){
         this._nombre = nombre;
     }
+    //Tarea Asignada
+    get apellido(){
+        return this._apellido;
+    }
+    set apellido(apellido){
+        this._apellido = apellido;
+    }
 }
 
 //Creamos objetos y los mostramos en consola:
@@ -26,6 +33,8 @@ let persona1 = new Persona("Martín", "Perez"); //Creamos el objeto "persona1".
 console.log(persona1.nombre); //llamamos al método get sin necesidad de usar ()
 persona1.nombre = 'Juan Carlos';   //modificamos el valor con el metodo set
 console.log(persona1.nombre);
+persona1.apellido = 'Rodriguez';   //Modificamos el atributo "apellido" con el metodo set
+console.log(persona1.apellido);    //Mostramos los cambios  para finalizar tarea asignada.
 //console.log(persona1); //Mostramos objeto persona1
 let persona2 = new Persona("Carlos","Lara"); //Creamos el objeto "persona2".
 console.log(persona2.nombre);
