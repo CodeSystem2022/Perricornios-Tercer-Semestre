@@ -24,8 +24,8 @@
 | 👨‍💻 **4** | *Gabriel Juan Alejandro Juhasz* | **SEMANA COMPLETA** |
 | 👨‍💻 **5** | *Juan Ignacio Encinas* | **SEMANA COMPLETA** |
 | 👨‍💻 **6** | *Braian Guzmán Echarri* | **SEMANA COMPLETA** |
-| 👨‍💻 **7** | *Carlos Fernando Villalón* | **EN CURSO** |
-| 👨‍💻 **8** | *Facundo Benjamín Méndez* | **22/5 al 28/5** |
+| 👨‍💻 **7** | *Carlos Fernando Villalón* | **SEMANA COMPLETA** |
+| 👨‍💻 **8** | *Facundo Benjamín Méndez* | **EN CURSO** |
 
 | ${\color{orange} Equipo - Perricornios}$ | ${\color{orange} Link - GitHub}$ |
 | --- | --- |
