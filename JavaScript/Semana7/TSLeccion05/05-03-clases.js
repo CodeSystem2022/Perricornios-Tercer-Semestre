@@ -27,19 +27,20 @@ class Persona{ //Definimos la clase. //Clase padre
     }
 }
 
-class Empleado extends Persona{ //Clase hija
-    constructor(departamento){
-        this._departamento = departamento;
-    }
-
-    get departamento(){
-        return this._departamento;
-    }
-
-    set departamento(departamento){
-        this._departamento = this.departamento;
+class Empleado extends Persona{//clase hija
+    constructor(nombre, apellido, departamento){
+        super(nombre, apellido);
+        this.departamento = departamento;
     }
 }
+get departamento(){
+    return this._departamento;
+}
+
+set departamento(departamento){
+    this._departamento = departamento;
+}
+
 
 //Creamos objetos y los mostramos en consola:
 
@@ -56,3 +57,6 @@ persona2.nombre = 'Maria Laura';
 console.log(persona2.nombre);
 //console.log(persona2); //Mostramos objeto persona2
 
+let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
+console.log(empleado1); Empleado { _nombre: 'Maria' , _apellido: 'Gimenez', _departamento 'Sistemas' }
+console.log(empleado1.nombre); Maria
