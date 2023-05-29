@@ -45,6 +45,15 @@ class Empleado extends Persona{ //Clase hija
     set departamento(departamento){
         this._departamento = this.departamento;
     }
+
+    //7.2 Sobreescritura:
+    //La clase hija aplica el concepto de sobreescritura
+    //Modifica el comportamiento definido del metodo de la clase padre.
+
+    nombreCompleto(){
+        //return this.nombre+' '+this._apellido+', departamento: '+ this.departamento;
+        return super.nombreCompleto()+', '+this._departamento; 
+    }
 }
 
 
