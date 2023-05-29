@@ -31,7 +31,7 @@ class Persona{ //Definimos la clase. //Clase padre
     }
     
     toString(){ //Regresa un string
-        return this.nombreCompleto()
+        return this.nombreCompleto();
     }
 
 }
@@ -81,5 +81,5 @@ let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
 //console.log(empleado1);
 console.log(empleado1.nombreCompleto()); 
 
-//Object.prototype.toString Esta es la maneera de acceder a metodos y atributos de forma dinamica
+//Object.prototype.toString Esta es la manenera de acceder a metodos y atributos de forma dinamica
 console.log(empleado1.toString());
