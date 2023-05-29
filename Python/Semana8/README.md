@@ -1,0 +1,1 @@
+Semana 8 22-05 a 26-05 Scrum Master Facundo Mendez
