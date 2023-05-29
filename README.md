@@ -29,10 +29,8 @@
 | | **JAVASCRIPT** | 7.3 Clase Object, toString, sobreescritura y Polimorfismo (video 4) | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ | 
 | | **PYTHON** | 7.2 Manejo de logging: Parte 1 (video 3) | :x: FACUNDO BENJAMIN MÉNDEZ | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | | **JAVA** | 7.2 Manejo de Interfaces Parte 2 | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
-| | | 7.2 7.5 Pruebas: Parte 2 | :x: FACUNDO BENJAMÍN MÉNDEZ | :heavy_check_mark: NOELIA ROMINA RUIZ |
+| | | 7.5 Pruebas: Parte 2 | :x: FACUNDO BENJAMÍN MÉNDEZ | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | 👩‍💻 **9** | *Noelia Romina Ruiz* | **SEMANA EN CURSO** |
-
-
 
 | ${\color{orange} Equipo - Perricornios}$ | ${\color{orange} Link - GitHub}$ |
 | --- | --- |
