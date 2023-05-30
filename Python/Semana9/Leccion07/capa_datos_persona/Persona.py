@@ -1,3 +1,5 @@
+from logger_base import log
+
 class Persona:
     #Método Dunder Init
     def __init__(self, id_persona, nombre, apellido, email):
@@ -47,3 +49,10 @@ class Persona:
     def email(self, email):
         self._email = email
        
+if __name__=='__main__':
+    persona1 = Persona(1, 'Juan', 'Perez', 'jperez@gmail.com')
+    log.debug(persona1)
+    persona2 = Persona(nombre='Jose', apellido='Lerez', email='ljose@gmail.com')
+    log.debug(persona2)
+    persona1 = Persona(id_persona=1)
+    log.debug(persona1) 
