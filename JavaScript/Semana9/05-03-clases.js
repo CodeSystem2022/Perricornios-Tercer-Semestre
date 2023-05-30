@@ -37,12 +37,14 @@ class Persona{ //Definimos la clase. //Clase padre
         return this.nombreCompleto();
     }
 
+    //Clase 8: Lunes 29/5
+    //Método estático, se asocia a la clase y no a los objetos
     static saludar(){
         console.log('Saludos desde este metodo static');
     }
 
     static saludar2(persona){
-        console.log(persona.nombre);
+        console.log(persona.nombre + ' ' + persona.apellido);
     }
 }
 
@@ -98,3 +100,6 @@ console.log(persona1.toString()); //referencia de la clase padre
 //persona1.saludar(); no se utiliza desde el objeto
 Persona.saludar();
 Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1); //pasamos una referencia de clase hija
