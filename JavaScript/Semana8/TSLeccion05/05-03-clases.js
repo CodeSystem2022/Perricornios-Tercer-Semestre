@@ -29,6 +29,13 @@ class Persona{ //Definimos la clase. //Clase padre
     nombreCompleto(){
         return this._nombre + ' ' + this._apellido;
     }
+    
+    //sobreescribiendo el método dela clase padre (Object)
+    toString(){ //Regresa un string
+        //se aplica el polimorfismo que significa = múltiples formas en tiempo de ejecución.
+        //El método que se ejecuta depende si es una referencia de tipo padre o hija (depende del objeto).
+        return this.nombreCompleto();
+    }
 
 }
 
@@ -76,3 +83,7 @@ let persona2 = new Persona("Carlos","Lara"); //Creamos el objeto "persona2".
 let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
 //console.log(empleado1);
 console.log(empleado1.nombreCompleto()); 
+
+//Object.prototype.toString Esta es la manenera de acceder a metodos y atributos de forma dinamica
+console.log(empleado1.toString());
+console.log(persona1.toString()); //referencia de la clase padre
