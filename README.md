@@ -31,6 +31,7 @@
 | | **JAVA** | 7.2 Manejo de Interfaces Parte 2 | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | | | 7.5 Pruebas: Parte 2 | :x: FACUNDO BENJAMÍN MÉNDEZ (SCRUM) | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | 👩‍💻 **9** | *Noelia Romina Ruiz* | **SEMANA EN CURSO** |
+| 👩‍💻 **10** | *Nadia Soledad Pereyra* | **SEMANA DEL 5/6 al 11/6** |
 
 | ${\color{orange} Equipo - Perricornios}$ | ${\color{orange} Link - GitHub}$ |
 | --- | --- |
