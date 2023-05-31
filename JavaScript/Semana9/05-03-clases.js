@@ -6,7 +6,8 @@ class Persona{ //Definimos la clase. //Clase padre
 
 //CLASE 8 STATIC, 8.2 Atributos estáticos:
     static contadorObjetosPersona = 0; //Definimos un atributo static que pertenece a la clase y no pertenece a un objeto
-    
+    email = 'Valor default email'; // Atributo NO estatico
+
     constructor(nombre, apellido){ //Creamos el método constructor.
         this._nombre = nombre; //Declaramos el atributo "nombre".
         this._apellido = apellido; //Declaramos el atributo "apellido".
@@ -116,3 +117,7 @@ Empleado.saludar2(empleado1); //pasamos una referencia de clase hija
 //console.log(persona1.contadorObjetosPersona); //Esta sintaxis muestra un valor undefined, porque intentamos acceder desde un objeto
 console.log(Persona.contadorObjetosPersona); //Accedemos desde la clase padre Persona
 console.log(Empleado.contadorObjetosPersona); //Accedemos desde la clase hija Empleado
+
+console.log(persona1.email); //Valor por default email
+console.log(empleado1.email); //valor por default email
+//console.log(Persona.email); //undefined, No se puede acceder desde la clase porque no es un metodo estatico
