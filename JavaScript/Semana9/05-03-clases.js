@@ -3,9 +3,17 @@
 
 
 class Persona{ //Definimos la clase. //Clase padre
+
+//CLASE 8 STATIC, 8.2 Atributos estáticos:
+    static contadorObjetosPersona = 0; //Definimos un atributo static que pertenece a la clase y no pertenece a un objeto
+    
     constructor(nombre, apellido){ //Creamos el método constructor.
         this._nombre = nombre; //Declaramos el atributo "nombre".
         this._apellido = apellido; //Declaramos el atributo "apellido".
+    //8.2 Video 3 cada vez que se cree un objeto, va a recibir un id unico que se va a incrementar: 
+        Persona.contadorObjetosPersona++;
+        console.log('Se incrementa el contador: '+' '+Persona.contadorObjetosPersona);
+    
     }
   
     //Método get: NO puede llamarse igual que la propiedad
@@ -103,3 +111,8 @@ Persona.saludar2(persona1);
 
 Empleado.saludar();
 Empleado.saludar2(empleado1); //pasamos una referencia de clase hija
+
+//CLASE 8 STATIC, 8.2 Atributos estáticos:
+//console.log(persona1.contadorObjetosPersona); //Esta sintaxis muestra un valor undefined, porque intentamos acceder desde un objeto
+console.log(Persona.contadorObjetosPersona); //Accedemos desde la clase padre Persona
+console.log(Empleado.contadorObjetosPersona); //Accedemos desde la clase hija Empleado
