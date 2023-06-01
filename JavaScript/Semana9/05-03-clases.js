@@ -128,3 +128,10 @@ console.log(persona1.toString()); //Llamamos al ToString del objeto persona1 de 
 console.log(persona2.toString()); //Llamamos al ToString del objeto persona2 de la clase padre
 console.log(empleado1.toString()); //Consulta al toString del objeto de la clase hija
 console.log(Persona.contadorPersonas); //Consulta para saber cuantas instancias hemos hecho
+
+
+//8.4 Uso de la palabra static: Parte 1 y 2 - VIDEO 6
+//Creamos mas objetos de tipo Persona
+let persona3 = new Persona('Carla', 'Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);
