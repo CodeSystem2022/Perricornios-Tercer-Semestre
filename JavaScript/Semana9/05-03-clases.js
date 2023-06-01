@@ -5,15 +5,17 @@
 class Persona{ //Definimos la clase. //Clase padre
 
 //CLASE 8 STATIC, 8.2 Atributos estáticos:
-    static contadorObjetosPersona = 0; //Definimos un atributo static que pertenece a la clase y no pertenece a un objeto
-    email = 'Valor default email'; // Atributo NO estatico
+    static contadorPersonas = 0; //Definimos un atributo static que pertenece a la clase y no pertenece a un objeto
+    //email = 'Valor default email'; // Atributo NO estatico
 
     constructor(nombre, apellido){ //Creamos el método constructor.
         this._nombre = nombre; //Declaramos el atributo "nombre".
         this._apellido = apellido; //Declaramos el atributo "apellido".
-    //8.2 Video 3 cada vez que se cree un objeto, va a recibir un id unico que se va a incrementar: 
-        Persona.contadorObjetosPersona++;
-        console.log('Se incrementa el contador: '+' '+Persona.contadorObjetosPersona);
+        this.idPersona = ++Persona.contadorPersonas;//Se coloca "++" adelante para que el incremento se haga antes
+        
+        //8.2 Video 3 cada vez que se cree un objeto, va a recibir un id unico que se va a incrementar: 
+        //Persona.contadorObjetosPersona++;
+        //console.log('Se incrementa el contador: '+' '+Persona.contadorObjetosPersona);
     
     }
   
@@ -36,7 +38,7 @@ class Persona{ //Definimos la clase. //Clase padre
     }
 
     nombreCompleto(){
-        return this._nombre + ' ' + this._apellido;
+        return this.idPersona + ' ' + this._nombre + ' ' + this._apellido;
     }
     
     //sobreescribiendo el método dela clase padre (Object)
@@ -121,3 +123,8 @@ console.log(Empleado.contadorObjetosPersona); //Accedemos desde la clase hija Em
 console.log(persona1.email); //Valor por default email
 console.log(empleado1.email); //valor por default email
 //console.log(Persona.email); undefined, No se puede acceder porque no es un metodo estatico de la clase, sino del objeto
+
+console.log(persona1.toString()); //Llamamos al ToString del objeto persona1 de la clase padre
+console.log(persona2.toString()); //Llamamos al ToString del objeto persona2 de la clase padre
+console.log(empleado1.toString()); //Consulta al toString del objeto de la clase hija
+console.log(Persona.contadorPersonas); //Consulta para saber cuantas instancias hemos hecho
