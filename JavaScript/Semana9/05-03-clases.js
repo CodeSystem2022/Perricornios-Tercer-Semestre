@@ -7,12 +7,21 @@ class Persona{ //Definimos la clase. //Clase padre
 //CLASE 8 STATIC, 8.2 Atributos estáticos:
     static contadorPersonas = 0; //Definimos un atributo static que pertenece a la clase y no pertenece a un objeto
     //email = 'Valor default email'; // Atributo NO estatico
+    static get MAX_OBJ(){ //Este método simula una constante
+        return 5;
+    }
+
 
     constructor(nombre, apellido){ //Creamos el método constructor.
         this._nombre = nombre; //Declaramos el atributo "nombre".
         this._apellido = apellido; //Declaramos el atributo "apellido".
         this.idPersona = ++Persona.contadorPersonas;//Se coloca "++" adelante para que el incremento se haga antes
-        
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            return this.idPersona = ++Persona.contadorPersonas;
+        }
+        else {
+            console.log('Se ha superado el máximo de objetos permitidos')
+        }
         //8.2 Video 3 cada vez que se cree un objeto, va a recibir un id unico que se va a incrementar: 
         //Persona.contadorObjetosPersona++;
         //console.log('Se incrementa el contador: '+' '+Persona.contadorObjetosPersona);
@@ -135,3 +144,13 @@ console.log(Persona.contadorPersonas); //Consulta para saber cuantas instancias 
 let persona3 = new Persona('Carla', 'Pertosi');
 console.log(persona3.toString());
 console.log(Persona.contadorPersonas);
+
+//8.5 Creación de constantes estáticas - VIDEO 7
+console.log(Persona.MAX_OBJ);
+// Persona.MAX_OBJ = 10; No se puede modificar ni alterar
+console.log(Persona.MAX_OBJ);
+    
+let persona4 = new Persona('Franco', 'Diaz');
+console.log(persona4.toString());
+let persona5= new Persona('Liliana', 'Paz');
+console.log(persona5.toString());
