@@ -29,8 +29,8 @@ class Conexion:
             except Exception as e:
                 log.error(f'Ocurrió un error: {e}')
                 sys.exit()
-            else:
-                return cls._conexion
+        else:
+            return cls._conexion
 
     #Método para el cursor
     # 8.3 Creación de la Clase Conexion: Video 5
@@ -45,8 +45,8 @@ class Conexion:
             except Exception as e:
                 log.error(f'Ocurrió un error: {e}')
                 sys.exit()
-            else:
-                return cls._cursor
+        else:
+            return cls._cursor
 
 
 # Prueba de errores de la clase Conection:
