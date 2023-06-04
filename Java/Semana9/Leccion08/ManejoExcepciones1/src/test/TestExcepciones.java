@@ -18,3 +18,4 @@ public class TestExcepciones {
         //como deriva de RuntimeException el error es de tipo uncheckException
     }
 }
+
