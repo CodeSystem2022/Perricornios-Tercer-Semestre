@@ -1,4 +1,4 @@
-# ${\color{red}*Semana 10 en Programación III*}$
+# **${\color{red}Semana 10- Programación III}$** 
 
 
 ## Durante la presente semana trabajaremos desde hoy, **lunes 5/6, hasta el dia sábado 10/6**
