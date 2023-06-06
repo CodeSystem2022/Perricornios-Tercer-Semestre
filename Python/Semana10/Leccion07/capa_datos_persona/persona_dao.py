@@ -37,8 +37,24 @@ class PersonaDAO:
                     personas.append(persona)
                 return personas
 
+    # 9.3 Método Insertar
+    @classmethod
+    def insertar(cls, persona):  # necesita recibir un parametro
+        with Conexion.obtenerConexion():  # realizamos las conexiones
+            with Conexion.obtenerCursor() as cursor:
+                valores = (persona.nombre, persona.apellido, persona.email)
+                cursor.execute(cls._INSERTAR, valores)  # Ejecutamos el cursor
+                log.debug(f'Persona Insertada: {persona}')
+                return cursor.rowcount
+
             
 if __name__ == '__main__':
+    # Insertar un registro
+    persona1 = Persona(nombre = 'Pedro', apellido = 'Romero', email = 'promero@mail.com')
+    personas_insertadas = PersonaDAO.insertar(persona1) #insertamos utilizamos PersonaDAO
+    log.debug(f'Personas insertadas: {personas_insertadas}')
+
+    # Seleccionar objetos
     personas = PersonaDAO.seleccionar()
     for persona in personas:
         log.debug(persona)
