@@ -1,0 +1,14 @@
+04:41:06 PM:DEBUG [logger_base.py:21] Mensaje a nivel Debug
+04:41:06 PM:INFO [logger_base.py:22] Mensaje a nivel Info
+04:41:06 PM:WARNING [logger_base.py:23] Mensaje a nivel Warning
+04:41:06 PM:ERROR [logger_base.py:24] Mensaje a nivel Error
+04:41:06 PM:CRITICAL [logger_base.py:25] Mensaje a nivel Critical
+01:46:07 PM:ERROR [conexion.py:30] Ocurri√≥ un error: type object 'Conexion' has no attribute 'DATABASE'
+01:46:21 PM:ERROR [conexion.py:30] Ocurri√≥ un error: type object 'Conexion' has no attribute 'DATABASE'
+01:46:37 PM:ERROR [conexion.py:30] Ocurri√≥ un error: type object 'Conexion' has no attribute 'DATABASE'
+01:50:00 PM:DEBUG [conexion.py:27] Conexi√≥n Exitosa: <connection object at 0x105eeb970; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+01:50:00 PM:ERROR [conexion.py:46] Ocurri√≥ un error: 'NoneType' object has no attribute 'cursor'
+03:36:40 PM:DEBUG [conexion.py:27] ConexiÛn Exitosa: <connection object at 0x000001731A5C28A0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+03:36:40 PM:ERROR [conexion.py:46] OcurriÛ un error: 'NoneType' object has no attribute 'cursor'
+03:38:26 PM:DEBUG [conexion.py:27] ConexiÛn Exitosa: <connection object at 0x000002C88D4B28A0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+03:38:26 PM:DEBUG [conexion.py:43] Se abriÛ correctamente el cursor: <cursor object at 0x000002C88F22F840; closed: 0>
