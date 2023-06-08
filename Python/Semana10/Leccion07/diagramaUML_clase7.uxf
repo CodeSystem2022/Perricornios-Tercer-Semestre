@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>10</x>
+      <y>30</y>
+      <w>730</w>
+      <h>600</h>
+    </coordinates>
+    <panel_attributes>acceso_datos</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>70</y>
+      <w>280</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;conexion&gt;&gt;
+--
+_DATABASE: Srting_
+_USERNAME: String_
+_PASSWORD: String_
+_DB PORT: String_
+_HOST: String_
+_conexion: conection_
+_cursor: Cursor_
+--
+_+obtener Conexion(cls): Conection_
+_+obtener Cursor(cls): Cursor_
+_+cerrar(cls)_
+--
+Responsibilidades:
+Administrar la conexión a la base de datos
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>90</y>
+      <w>220</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-id_persona: int
+_nombre: String
+-apellido: String 
+-email: String
+--
++__str__(): String
++metodo Get/Set de cada atributo
+--
+Responsibilidades:
+Crear objetos de la entidad de
+Persona</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>350</y>
+      <w>230</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;PersonaDao&gt;&gt;
+--
+_SELECCIONAR:String_
+_INSERTAR:String_
+_ACTUALIZAR:String_
+_ELIMINAR: String_
+--
+_+seleccionar(cls)_
+_+insertar(cls, persona)_
+_+actualizar(cls, ersona)_
+_+eliminar(cls,persona)_
+--
+Responsibilidades:
+Realizar las operaciones sobre la 
+base de datos de la entidad
+Persona</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>270</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>310</y>
+      <w>290</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>270.0;170.0;10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

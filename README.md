@@ -27,10 +27,12 @@
 | 👨‍💻 **7** | *Carlos Fernando Villalón* | **SEMANA COMPLETA** |
 | 👨‍💻 **8** | *Facundo Benjamín Méndez* | **SEMANA INCOMPLETA** | **ASIGNADO A** | **REASIGNADO A** |
 | | **JAVASCRIPT** | 7.3 Clase Object, toString, sobreescritura y Polimorfismo (video 4) | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ | 
-| | **PYTHON** | 7.2 Manejo de logging: Parte 1 (video 3) | :x: FACUNDO BENJAMIN MÉNDEZ | :heavy_check_mark: NOELIA ROMINA RUIZ |
+| | **PYTHON** | 7.2 Manejo de logging: Parte 1 (video 3) | :x: FACUNDO BENJAMIN MÉNDEZ (SCRUM) | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | | **JAVA** | 7.2 Manejo de Interfaces Parte 2 | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
-| | | 7.5 Pruebas: Parte 2 | :x: FACUNDO BENJAMÍN MÉNDEZ | :heavy_check_mark: NOELIA ROMINA RUIZ |
-| 👩‍💻 **9** | *Noelia Romina Ruiz* | **SEMANA EN CURSO** |
+| | | 7.5 Pruebas: Parte 2 | :x: FACUNDO BENJAMÍN MÉNDEZ (SCRUM) | :heavy_check_mark: NOELIA ROMINA RUIZ |
+| 👩‍💻 **9** | *Noelia Romina Ruiz* | **SEMANA INCOMPLETA** | **ASIGNADO A** | **RESIGNADO A** |
+| | | **JAVA** 8.6 Agregamos el finally y catch (VIDEO 11) | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
+| 👩‍💻 **10** | *Nadia Soledad Pereyra* | **SEMANA DEL 5/6 al 11/6** |
 
 | ${\color{orange} Equipo - Perricornios}$ | ${\color{orange} Link - GitHub}$ |
 | --- | --- |

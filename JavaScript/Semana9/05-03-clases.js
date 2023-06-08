@@ -3,9 +3,29 @@
 
 
 class Persona{ //Definimos la clase. //Clase padre
+
+//CLASE 8 STATIC, 8.2 Atributos estáticos:
+    static contadorPersonas = 0; //Definimos un atributo static que pertenece a la clase y no pertenece a un objeto
+    //email = 'Valor default email'; // Atributo NO estatico
+    static get MAX_OBJ(){ //Este método simula una constante
+        return 5;
+    }
+
+
     constructor(nombre, apellido){ //Creamos el método constructor.
         this._nombre = nombre; //Declaramos el atributo "nombre".
         this._apellido = apellido; //Declaramos el atributo "apellido".
+        this.idPersona = ++Persona.contadorPersonas;//Se coloca "++" adelante para que el incremento se haga antes
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            return this.idPersona = ++Persona.contadorPersonas;
+        }
+        else {
+            console.log('Se ha superado el máximo de objetos permitidos')
+        }
+        //8.2 Video 3 cada vez que se cree un objeto, va a recibir un id unico que se va a incrementar: 
+        //Persona.contadorObjetosPersona++;
+        //console.log('Se incrementa el contador: '+' '+Persona.contadorObjetosPersona);
+    
     }
   
     //Método get: NO puede llamarse igual que la propiedad
@@ -27,7 +47,7 @@ class Persona{ //Definimos la clase. //Clase padre
     }
 
     nombreCompleto(){
-        return this._nombre + ' ' + this._apellido;
+        return this.idPersona + ' ' + this._nombre + ' ' + this._apellido;
     }
     
     //sobreescribiendo el método dela clase padre (Object)
@@ -37,12 +57,14 @@ class Persona{ //Definimos la clase. //Clase padre
         return this.nombreCompleto();
     }
 
+    //Clase 8: Lunes 29/5
+    //Método estático, se asocia a la clase y no a los objetos
     static saludar(){
         console.log('Saludos desde este metodo static');
     }
 
     static saludar2(persona){
-        console.log(persona.nombre);
+        console.log(persona.nombre + ' ' + persona.apellido);
     }
 }
 
@@ -98,3 +120,37 @@ console.log(persona1.toString()); //referencia de la clase padre
 //persona1.saludar(); no se utiliza desde el objeto
 Persona.saludar();
 Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1); //pasamos una referencia de clase hija
+
+//CLASE 8 STATIC, 8.2 Atributos estáticos:
+//console.log(persona1.contadorObjetosPersona); //Esta sintaxis muestra un valor undefined, porque intentamos acceder desde un objeto
+console.log(Persona.contadorObjetosPersona); //Accedemos desde la clase padre Persona
+console.log(Empleado.contadorObjetosPersona); //Accedemos desde la clase hija Empleado
+
+console.log(persona1.email); //Valor por default email
+console.log(empleado1.email); //valor por default email
+//console.log(Persona.email); undefined, No se puede acceder porque no es un metodo estatico de la clase, sino del objeto
+
+console.log(persona1.toString()); //Llamamos al ToString del objeto persona1 de la clase padre
+console.log(persona2.toString()); //Llamamos al ToString del objeto persona2 de la clase padre
+console.log(empleado1.toString()); //Consulta al toString del objeto de la clase hija
+console.log(Persona.contadorPersonas); //Consulta para saber cuantas instancias hemos hecho
+
+
+//8.4 Uso de la palabra static: Parte 1 y 2 - VIDEO 6
+//Creamos mas objetos de tipo Persona
+let persona3 = new Persona('Carla', 'Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);
+
+//8.5 Creación de constantes estáticas - VIDEO 7
+console.log(Persona.MAX_OBJ);
+// Persona.MAX_OBJ = 10; No se puede modificar ni alterar
+console.log(Persona.MAX_OBJ);
+    
+let persona4 = new Persona('Franco', 'Diaz');
+console.log(persona4.toString());
+let persona5= new Persona('Liliana', 'Paz');
+console.log(persona5.toString());
