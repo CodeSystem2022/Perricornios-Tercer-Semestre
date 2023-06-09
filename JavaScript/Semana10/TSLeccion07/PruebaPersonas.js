@@ -77,9 +77,7 @@ class Empleado extends Persona{
 
     toString(){
         return `
-        ${super.toString()} 
-        ${this._idEmpleado} 
-        ${this._sueldo}`;
+        ${super.toString()} ${this._idEmpleado} ${this._sueldo}`;
     }
 
 }
@@ -114,3 +112,17 @@ class Cliente extends Persona{
     }
 
 }
+
+
+
+
+
+
+
+
+//Prueba clase Empleado
+let empleado1 = new Empleado('Pedro', 'Román', 18, 5000);
+console.log(empleado1.toString());
+
+let empleado2 = new Empleado('Jonas', 'Torres', 30, 7000);
+console.log(empleado2.toString());
