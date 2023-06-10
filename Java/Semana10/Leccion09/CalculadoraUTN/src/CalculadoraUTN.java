@@ -33,7 +33,7 @@ public class CalculadoraUTN {
     }//Fin main
 
     private static void mostrarMenu(){
-                    //Mostramos el menú
+        //Mostramos el menú
             System.out.println("""
                     1. Suma
                     2. Resta
@@ -45,11 +45,10 @@ public class CalculadoraUTN {
     }//Fin metodo mostrarMenu
                                
     private static void ejecutarOperacion(int operacion, Scanner entrada){
-         System.out.print("Digite el valor para el operando 1: ");
-                var operando1 = Integer.parseInt(entrada.nextLine());
-
-                System.out.print("Digite el valor para el operando 2: ");
-                var operando2 = Integer.parseInt(entrada.nextLine());
+            System.out.print("Digite el valor para el operando 1: ");
+            var operando1 = Double.parseDouble(entrada.nextLine());
+            System.out.print("Digite el valor para el operando 2: ");
+            var operando2 = Double.parseDouble(entrada.nextLine());
         int resultado;
                 switch(operacion){
                     case 1 -> { //Suma
