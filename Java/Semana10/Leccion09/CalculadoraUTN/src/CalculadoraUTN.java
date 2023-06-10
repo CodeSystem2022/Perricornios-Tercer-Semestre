@@ -18,9 +18,10 @@ public class CalculadoraUTN {
                     5. Salír.
                     """);
             System.out.print("operación a realizar?: ");
-            var operacion = Integer.parseInt(entrada.nextLine());
-
-            if(operacion >= 1 && operacion <= 4) {
+            
+            try{
+                var operacion = Integer.parseInt(entrada.nextLine());
+                if(operacion >= 1 && operacion <= 4) {
 
                 System.out.print("Digite el valor para el operando 1: ");
                 var operando1 = Integer.parseInt(entrada.nextLine());
@@ -59,6 +60,10 @@ public class CalculadoraUTN {
             }
             //Imprimimos un salto de linea antes de repetir el menu
             System.out.println();
+            }catch (Exception e){//Fin try,comienza el catch
+                System.out.println("Ocurrio un error: "+e.getMessage());
+                System.out.println();
+            }
         }//Fin while
     }//Fin main
 }//Fin clase
