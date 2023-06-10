@@ -8,16 +8,7 @@ public class CalculadoraUTN {
 
 
             System.out.println("******* aplicacion calculadora *******");
-
-            //Mostramos el menú
-            System.out.println("""
-                    1. Suma
-                    2. Resta
-                    3. Multiplicación
-                    4. División
-                    5. Salír.
-                    """);
-            System.out.print("operación a realizar?: ");
+            mostrarMenu();
             
             try{
                 var operacion = Integer.parseInt(entrada.nextLine());
@@ -66,4 +57,16 @@ public class CalculadoraUTN {
             }
         }//Fin while
     }//Fin main
+
+    private static void mostrarMenu(){
+                    //Mostramos el menú
+            System.out.println("""
+                    1. Suma
+                    2. Resta
+                    3. Multiplicación
+                    4. División
+                    5. Salír.
+                    """);
+            System.out.print("operación a realizar?: ");
+    }
 }//Fin clase
