@@ -49,7 +49,7 @@ public class CalculadoraUTN {
             var operando1 = Double.parseDouble(entrada.nextLine());
             System.out.print("Digite el valor para el operando 2: ");
             var operando2 = Double.parseDouble(entrada.nextLine());
-        int resultado;
+        Double resultado;
                 switch(operacion){
                     case 1 -> { //Suma
                         resultado = operando1 + operando2;
