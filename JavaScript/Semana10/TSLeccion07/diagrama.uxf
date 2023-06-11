@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>238</x><y>126</y><w>147</w><h>161</h></coordinates><panel_attributes>Persona
+--
+_idPersona: number
+_nombre: string
+_apellido: string
+_edad: number
+contadorPersonas
+--
+getIdPersona(): number
+getNombre(): string
+setNombre(string)
+getApellido(): string
+setApellido(string)
+getEdad(): number
+setEdad(string)
+toString()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>63</x><y>357</y><w>168</w><h>91</h></coordinates><panel_attributes>Empleado
+--
+_idEmpleado: Long
+_sueldo: number
+--
+getIdEmpleado(): number
+getSueldo(): number
+setSueldo(number)
+toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>315</y><w>210</w><h>28</h></coordinates><panel_attributes>&lt;&lt;Extends&gt;&gt;</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>322</y><w>21</w><h>49</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>315</y><w>168</w><h>28</h></coordinates><panel_attributes>&lt;&lt;Extends&gt;&gt;</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>322</y><w>21</w><h>42</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>301</x><y>280</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>392</x><y>350</y><w>147</w><h>98</h></coordinates><panel_attributes>Cliente
+--
+_idCliente: number
+_fechaRegistro: Date
+--
+getIdClient
+getFechaRegistro(): Date
+setFechaRegistro(Date)
+toString()</panel_attributes><additional_attributes></additional_attributes></element></diagram>
