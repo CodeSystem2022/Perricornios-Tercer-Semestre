@@ -1,4 +1,4 @@
-class Producto{
+class Producto extends Orden{
 
     static contadorProductos = 0;
 
