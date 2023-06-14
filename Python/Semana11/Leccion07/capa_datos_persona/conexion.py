@@ -20,7 +20,9 @@ class Conexion:
     #Método para la conexion
     @classmethod
     def obtenerConexion(cls):
-        pass
+        conexion = cls.obtenerPool().getconn()
+        log.debug(f'Conexion obtenida del pool: {conexion}')
+        return conexion
 
     #Método para el cursor
     # 8.3 Creación de la Clase Conexion: Video 5
@@ -33,7 +35,19 @@ class Conexion:
     def obtenerPool(cls):
         if cls._pool is None:
             try:
-                cls._pool = pool.SimpleConnectionPool()
+                cls._pool = pool.SimpleConnectionPool(cls._MIN_CON,
+                                                      cls._MAX_CON,
+                                                      host=cls._HOST,
+                                                      user=cls._USERNAME,
+                                                      password=cls._PASSWORD,
+                                                      port=cls._DB_PORT,
+                                                      database=cls._DATABASE)
+                log.debug(f'creación del pool exitosa: {cls._pool}')
+            except Exception as e:
+                log.error(f'Ocurrio un error al obtener el pool: {e}')
+                sys.exit()
+        else:
+            return cls._pool
 
 
 # Prueba de errores de la clase Conection:
