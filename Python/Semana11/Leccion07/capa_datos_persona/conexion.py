@@ -20,7 +20,9 @@ class Conexion:
     #Método para la conexion
     @classmethod
     def obtenerConexion(cls):
-        pass
+        conexion = cls.obtenerPool().getconn()
+        log.debug(f'Conexion obtenida del pool: {conexion}')
+        return conexion
 
     #Método para el cursor
     # 8.3 Creación de la Clase Conexion: Video 5
