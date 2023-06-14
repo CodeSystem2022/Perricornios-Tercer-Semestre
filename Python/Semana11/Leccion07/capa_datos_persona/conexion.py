@@ -48,8 +48,6 @@ class Conexion:
             return cls._pool
 
 
-
-
 # Prueba de errores de la clase Conection:
 
 if __name__ == '__main__':
