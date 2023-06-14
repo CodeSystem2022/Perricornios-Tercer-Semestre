@@ -33,7 +33,7 @@
 | 👩‍💻 **9** | *Noelia Romina Ruiz* | **SEMANA INCOMPLETA** | **ASIGNADO A** | **RESIGNADO A** |
 | | | **JAVA** 8.6 Agregamos el finally y catch (VIDEO 11) | :x: JUAN IGNACIO ENCINAS | :heavy_check_mark: NOELIA ROMINA RUIZ |
 | 👩‍💻 **10** | *Nadia Soledad Pereyra* | **SEMANA COMPLETA** |
-| 👨‍💻 **11** | *Bruno Leandro Cosimano Abadie* | **12/6 al 18/6** |
+| 👨‍💻 **11** | *Gabriel Juan Alejandro Juhasz* | **12/6 al 18/6** |
 
 | ${\color{orange} Equipo - Perricornios}$ | ${\color{orange} Link - GitHub}$ |
 | --- | --- |
