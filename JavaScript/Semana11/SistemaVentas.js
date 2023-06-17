@@ -32,6 +32,24 @@ class Producto{
         return `idProducto: ${this._idProducto}, nombre: ${this._nombre}, precio: $${this._precio}`;
     }
 
+
+
+    calcularTotal(){
+        let totalVentas = 0;
+        for(let producto of this._productos){
+            totalVentas += producto.precio;
+        }
+        return totalVentas;
+    }//fin metodo
+
+    mostrarOrden(){
+        let productoOrden = ' ';
+        for(let  producto of this._productos){
+            productoOrden += producto.toString()+' ';
+        }
+        console.log(`Orden: ${this._idOrden}, Total: ${this.calcularTotal()}, Productos: ${productoOrden}`)
+    }
+
 } //Fín de la clase Producto
 
 
