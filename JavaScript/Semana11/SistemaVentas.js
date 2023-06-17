@@ -43,7 +43,7 @@ class Producto{
     }//fin metodo
 
     mostrarOrden(){
-        let productoOrden = ' ';
+        let productoOrden = '  ';
         for(let  producto of this._productos){
             productoOrden += producto.toString()+' ';
         }
