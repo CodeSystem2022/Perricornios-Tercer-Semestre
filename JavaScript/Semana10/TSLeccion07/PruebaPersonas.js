@@ -3,7 +3,7 @@ class Persona{
     static contadorPersonas = 0; //atributo estático
 
     constructor(nombre, apellido, edad){ //propiedades de instancia.
-        this._idPErsona = ++Persona.contadorPersonas;
+        this._idPersona = ++Persona.contadorPersonas;
         this._nombre = nombre;
         this._apellido = apellido;
         this._edad = edad;
@@ -12,7 +12,7 @@ class Persona{
 
     //solo el getter para el atributo idPersona
     get idPersona(){
-        return this._idPErsona;
+        return this._idPersona;
     }
 
     //getter y setter para el atributo nombre
@@ -44,11 +44,7 @@ class Persona{
 
     //agregamos el toString()
     toString(){ 
-        return ` 
-        ${this._idPErsona} 
-        ${this._nombre} 
-        ${this._apellido} 
-        ${this._edad}`;
+        return `${this._idPersona} ${this._nombre} ${this._apellido} ${this._edad}`;
     }
 
 }
@@ -64,7 +60,7 @@ class Empleado extends Persona{
     }
 
     get idEmpleado(){
-        return this.idEmpleado;
+        return this._idEmpleado;
     }
 
     get sueldo(){
@@ -86,39 +82,35 @@ class Cliente extends Persona{
 
     static contadorClientes = 0;
 
-    constructor(nombre, apellido, edad, fecharegistro){
+    constructor(nombre, apellido, edad, fechaRegistro){
         super(nombre, apellido, edad);
         this._idCliente = ++Cliente.contadorClientes;
-        this._fechaRegistro = fecharegistro;
+        this._fechaRegistro = fechaRegistro;
     }
 
-    get idCLiente(){
-        return this._idCLiente;
+    get idCliente(){
+        return this._idCliente;
     }
 
-    get fecharegistro(){
+    get fechaRegistro(){
         return this._fechaRegistro;
     }
 
-    set fecharegistro(fecharegistro){
-        this._fechaRegistro = fecharegistro;
+    set fecharRegistro(fechaRegistro){
+        this._fechaRegistro = fechaRegistro;
     }
 
     toString(){
-        return `
-        ${super.toString()} 
-        ${this._idCLiente} 
-        ${this._fechaRegistro}`;
+        return `${super.toString()} ${this._idCliente} ${this._fechaRegistro}`;
     }
 
 }
+//Prueba Clase Persona
+let persona1 = new Persona('Juan','Perez', 32);
+console.log(persona1.toString());
 
-
-
-
-
-
-
+let persona2 = new Persona('Carla','Ortega', 22);
+console.log(persona2.toString());
 
 //Prueba clase Empleado
 let empleado1 = new Empleado('Pedro', 'Román', 18, 5000);
@@ -126,3 +118,10 @@ console.log(empleado1.toString());
 
 let empleado2 = new Empleado('Jonas', 'Torres', 30, 7000);
 console.log(empleado2.toString());
+
+//Prueba clase Cliente
+let cliente1 = new Cliente('Miguel', 'Zala', 29, new Date());
+console.log(cliente1.toString());
+
+let cliente2 = new Cliente('Natalia', 'Ortega', 22, new Date());
+console.log(cliente2.toString());

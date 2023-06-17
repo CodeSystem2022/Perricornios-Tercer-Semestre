@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>15</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>75</y>
+      <w>450</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>Persona
+--
+-id: int
+-nombre: String
+-tel: String 
+-email: String
+__numeroPersonas: int__
+--
++getId()
++setId(id:int)
++getNombre()
++setNombre(nombre:String)
++getTel
++setTel(tel:String)
++getEmail()
++setEmail(email:String)
++toString()
+--
+Responsibilities
+-- Creación de ojetos de tipo 
+Persona
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

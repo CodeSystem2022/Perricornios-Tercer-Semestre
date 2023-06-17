@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>152</x><y>168</y><w>168</w><h>152</h></coordinates><panel_attributes>Orden
+--
+-idOrden: number
+productos[]: Producto
+contadorProductosAgregados: number
+contadorOrdenes: number
+MAX PRODUCTOS: number = 5
+--
+Orden()
+agregarProducto(producto)
+calcularTotal(): number
+mostarOrden()
+--
+Responsibilities
+--Crear objetos Orden
+-- Administrar los productos de un orden</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>152</x><y>392</y><w>168</w><h>192</h></coordinates><panel_attributes>Producto
+--
+-idProducto: number
+nombre: string
+precio: number
+contadorProductos: number
+--
+Producto()
+getIdProducto(): number
+getIdNombre(): string
+getIdNombre(nombre)
+getIdPrecio(): number
+getIdPrecio(precio)
+toString(): string
+--
+Responsibilities
+-- Crear objetos de tipo Producto</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>216</y><w>120</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>176</y><w>168</w><h>96</h></coordinates><panel_attributes>VentasTest
+--
+Esto no es una clase
+Es la prueba de creación
+de objetos Productos y Orden
+--
+Responsabilidades
+-- Ejecutar la prueba de
+    la aplicacion de Ventas</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>312</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>216</y><w>56</w><h>24</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element></diagram>
