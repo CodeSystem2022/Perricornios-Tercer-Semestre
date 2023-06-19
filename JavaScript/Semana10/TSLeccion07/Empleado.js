@@ -9,7 +9,7 @@ class Empleado extends Persona{
     }
 
     get idEmpleado(){
-        return this.idEmpleado;
+        return this._idEmpleado;
     }
 
     get sueldo(){
