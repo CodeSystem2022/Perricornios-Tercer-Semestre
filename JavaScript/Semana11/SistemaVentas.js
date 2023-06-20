@@ -31,8 +31,8 @@ class Producto{
     toString(){ //Template Literals: Nos permite insertar código dinámicamente.
         return `idProducto: ${this._idProducto}, nombre: ${this._nombre}, precio: $${this._precio}`;
     }
-
 } //Fín de la clase Producto
+
 
 class Orden{
     //atributos estáticos de clase
@@ -80,6 +80,7 @@ class Orden{
         console.log(`Orden: ${this._idOrden}, Total: $${this.calcularTotal()}, Productos: ${productosOrden}`);
     }
 }
+
 
 let producto1 = new Producto('Pantalon', 200);
 let producto2 = new Producto('Camisa', 150);
