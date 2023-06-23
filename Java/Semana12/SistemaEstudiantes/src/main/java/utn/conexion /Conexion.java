@@ -1,4 +1,4 @@
-package UTN.conexion;
+package utn.conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
