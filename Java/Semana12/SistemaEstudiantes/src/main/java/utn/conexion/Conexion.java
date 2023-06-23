@@ -1,3 +1,4 @@
+//Se reubica la clase a su package correspondiente
 package utn.conexion;
 
 import java.sql.Connection;
@@ -17,3 +18,4 @@ public class Conexion {
         conexion = DriverManager.getConnection(url, usuario, password);
     }
 }
+

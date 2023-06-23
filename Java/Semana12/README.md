@@ -19,4 +19,5 @@ Si tenés alguna duda o inquietud nos mantenemos en contacto por todos nuestros 
 + **reuniones de meet** con el link que siempre usamos y que está en la descripción del grupo de whatsapp.
 
 ### *¡Vamos por el fin del cuatrimestre!*
+###
 
