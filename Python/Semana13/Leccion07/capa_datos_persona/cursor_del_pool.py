@@ -28,3 +28,11 @@ class CursorDelPool:
         self._cursor.close() #cerramos la conexión
         Conexion.liberarConexion(self._conexion) # liberamos la conexión del pool de conexiones
     
+
+#11.4 Pruebas del cursor del pool - Parte 1
+if __name__ == '__main__':
+    with CursorDelPool() as cursor:
+        log.debug('Dentro del bloque with')
+        cursor.execute('SELECT * FROM persona')
+        log.debug(cursor.fetchall())
+             
