@@ -1,4 +1,4 @@
-# **${\color{yellow}Semana 12 - Laboratorio III - JavaScript}$**
+# **${\color{yellow}Semana 13- Laboratorio III - JavaScript}$**
 
 
 ## Durante la presente semana se trabajará desde hoy, **lunes 26/6, hasta el dia sabado 1/7**. 
