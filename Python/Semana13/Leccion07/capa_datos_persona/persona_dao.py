@@ -1,6 +1,6 @@
-
-from Persona import Persona
-from conexion import Conexion
+from capa_datos_persona.Persona import Persona
+from capa_datos_persona.conexion import Conexion
+from capa_datos_persona.cursor_del_pool import CursorDelPool
 from logger_base import log
 
 class PersonaDAO:
@@ -23,50 +23,45 @@ class PersonaDAO:
     #Definimos los métodos de clase
     @classmethod
     def seleccionar(cls):
-        #armamos las conexiones automáticas
-         with Conexion.obtenerConexion(): 
-            #obtenemos el cursor también de manera automática
-            with Conexion.obtenerCursor() as cursor:
-                #creamos la query
-                cursor.execute(cls._SELECCIONAR) #ejecuta la sentencia
-                registros = cursor.fetchall()
-                personas = [] #creamos una lista de personas vacía
-                #recorremos el registro con un ciclo for each
-                for registro in registros:
-                     #cada registro es una columna (id_persona, nombre, apellido y email)
-                    persona = Persona(registro[0], registro[1], registro[2], registro[3])
-                    personas.append(persona)
-                return personas
+        #obtenemos el cursor también de manera automática
+        with CursorDelPool() as cursor:
+            #creamos la query
+            cursor.execute(cls._SELECCIONAR) #ejecuta la sentencia
+            registros = cursor.fetchall()
+            personas = [] #creamos una lista de personas vacía
+            #recorremos el registro con un ciclo for each
+            for registro in registros:
+                 #cada registro es una columna (id_persona, nombre, apellido y email)
+                persona = Persona(registro[0], registro[1], registro[2], registro[3])
+                personas.append(persona)
+            return personas
 
     # 9.3 Método Insertar
     @classmethod
     def insertar(cls, persona):  # necesita recibir un parametro
-        with Conexion.obtenerConexion():  # realizamos las conexiones
-            with Conexion.obtenerCursor() as cursor:
-                valores = (persona.nombre, persona.apellido, persona.email)
-                cursor.execute(cls._INSERTAR, valores)  # Ejecutamos el cursor
-                log.debug(f'Persona Insertada: {persona}')
-                return cursor.rowcount
+       with CursorDelPool as cursor:
+            valores = (persona.nombre, persona.apellido, persona.email)
+            cursor.execute(cls._INSERTAR, valores)  # Ejecutamos el cursor
+            log.debug(f'Persona Insertada: {persona}')
+            return cursor.rowcount
             
     # 9.4 Método Actualizar
     @classmethod
     def actualizar(cls, persona):
-        with Conexion.obtenerConexion():
-            with Conexion.obtenerCursor() as cursor:
-                valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
-                cursor.execute(cls._ACTUALIZAR, valores)
-                log.debug(f'Persona actualizada: {persona}')
-                return cursor.rowcount
+        with CursorDelPool() as cursor:
+            valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
+            cursor.execute(cls._ACTUALIZAR, valores)
+            log.debug(f'Persona actualizada: {persona}')
+            return cursor.rowcount
 
     # 9.5 Método Eliminar
     @classmethod
     def eliminar(cls, persona):
-        with Conexion.obtenerConexion():
-            with Conexion.obtenerCursor() as cursor:
-                valores = (persona.id_persona,)
-                cursor.execute(cls._ELIMINAR, valores)
-                log.debug(f'Los objetos eliminados son: {persona}')
-                return cursor.rowcount
+        with CursorDelPool() as cursor:
+            valores = (persona.id_persona,)
+            cursor.execute(cls._ELIMINAR, valores)
+            log.debug(f'Los objetos eliminados son: {persona}')
+            return cursor.rowcount
 
             
 if __name__ == '__main__':
