@@ -67,7 +67,7 @@ class Conexion:
 
 if __name__ == '__main__':
     conexion1 = Conexion.obtenerConexion()
-    Conexion.liberarConexion(conexion1) # Obtiene la conexión y la libera, mientras haya tras conexiones activas termina de ser ocupada y se libera mientras otras pueden estar conctadas lal mismo tiempo y al liberarse puede ser ocupada por otro usuario
+    Conexion.liberarConexion(conexion1) # Obtiene la conexión y la libera, mientras haya tras conexiones activas termina de ser ocupada, otras pueden estar conctadas al mismo tiempo.
     conexion2 = Conexion.obtenerConexion()
     Conexion.liberarConexion(conexion2)
     conexion3 = Conexion.obtenerConexion()
