@@ -12,11 +12,11 @@ import java.util.List;
 
 public class EstudianteDAO {
     //Método listar
-    public List<Estudiante> listar(){
-        
+    public List<Estudiante> listarEstudiantes() {
+
         //Creamos una lista de la clase Estudiante
         List<Estudiante> estudiantes = new ArrayList<>();
-        
+
         //Creamos algunos objetos que son necesarios para comunicarnos con la bd
         PreparedStatement ps; //renombramos, sirve para preparar la sentencia sql
         ResultSet rs; //renombramos, permite almacenar el resultado obtenido de la bd
@@ -24,20 +24,41 @@ public class EstudianteDAO {
         //Creamos un objeto de tipo conexión
         Connection con = getConnection();
         String sql = "SELECT * FROM estudiantes2022 ORDER BY estudiantes2022";
-        try{ //Enviamos la consulta hacia la base de datos
+        try { //Enviamos la consulta hacia la base de datos
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery(); // recibimos la ejecucion del querry que estamos enviando
-            while(rs.next()){ //mientras tengamos registros para iterar va a serguir operando
+            while (rs.next()) { //mientras tengamos registros para iterar va a serguir operando
                 var estudiante = new Estudiante();
                 estudiante.setIdEstudiante(rs.getInt("idestudiante2022"));
+                estudiante.setNombre(rs.getString("nombre"));
+                estudiante.setApellido(rs.getString("apellido"));
+                estudiante.setTelefono(rs.getString("telefono"));
+                estudiante.setEmail(rs.getString("email"));
+                //Falta agregarlo a la lista
+                estudiante.add(estudiante);
 
             }
-        } catch (Exception e){
-            System.out.println("Ocurrió un error al seleccionar datos: "+e.getMessage());
-
+        } catch (Exception e) {
+            System.out.println("Ocurrió un error al seleccionar datos: " + e.getMessage());
         }
+        finally {
+            try {
+                con.close()
+            } catch (Exeption e){
+                System.out.println("Ocurrio un error al cerrar la conexion: "+e.getMessage());
+            }
+            }
+        }
+        {//Fin finally
+        return estudiantes;
+    }//Fin metodo listar
 
-
+    public static void main(String[] args) {
+        //Listar los estudiantes
+        var estudiantesDao = EstudianteDAO;
+        System.out.println("Listado de estudiantes: ");
+        List<Estudiante> estudiantes = estudiantesDao.listarEstudiantes();
+        estudiantes.forEach(System.out::println); //Funcion lambda para imprimir
 
     }
 
@@ -72,7 +93,7 @@ public class EstudianteDAO {
     }
 
     public static void main(String[] args) {
-        
+
         //Buscar por id
         var estudiante1 = new Estudiante(1);
         System.out.println("Estudiantes antes de la busqueda"+estudiante1);
@@ -84,3 +105,4 @@ public class EstudianteDAO {
         }
     }
 }
+
