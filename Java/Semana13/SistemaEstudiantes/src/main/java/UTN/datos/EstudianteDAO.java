@@ -12,7 +12,7 @@ import java.util.List;
 
 public class EstudianteDAO {
     //Método listar
-    public List<Estudiante> listar() {
+    public List<Estudiante> listarEstudiantes() {
 
         //Creamos una lista de la clase Estudiante
         List<Estudiante> estudiantes = new ArrayList<>();
@@ -52,6 +52,15 @@ public class EstudianteDAO {
         {//Fin finally
         return estudiantes;
     }//Fin metodo listar
+
+    public static void main(String[] args) {
+        //Listar los estudiantes
+        var estudiantesDao = EstudianteDAO;
+        System.out.println("Listado de estudiantes: ");
+        List<Estudiante> estudiantes = estudiantesDao.listarEstudiantes();
+        estudiantes.forEach(System.out::println); //Funcion lambda para imprimir
+
+    }
 
         //Metodo por id -> find by id
     public boolean buscarEstudiantePorId(Estudiante estudiante){
@@ -96,3 +105,4 @@ public class EstudianteDAO {
         }
     }
 }
+
