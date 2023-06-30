@@ -3,6 +3,7 @@ package UTN.conexion;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+
 public class Conexion {
     public static Connection getConnection(){
         Connection conexion = null;
@@ -13,7 +14,9 @@ public class Conexion {
         var password = "admin";
 
         //cargamos la clase del drive de mysql en memoria
+
         Class.forName("com.mysql.cj.jdbc.Driver");
         conexion = DriverManager.getConnection(url, usuario, password);
     }
 }
+
