@@ -50,13 +50,28 @@ class Conexion:
         else:
             return cls._pool
 
+    @classmethod
+    def liberarConexion(cls, conexion):
+        cls.obtenerPool().putconn(conexion)
+        log.debug(f'Regresamos la conexion del pool: {conexion}')
+
+    # 11.2 MétodocerrarConexiones()(Video2)
+    # Creamos un método para cerrar por completo el método pool de conexiones
+    @classmethod
+    def cerrarConexiones(cls):
+        cls.obtenerPool().closeall()
+        
+
 
 # Prueba de errores de la clase Conection:
 
 if __name__ == '__main__':
     conexion1 = Conexion.obtenerConexion()
+    Conexion.liberarConexion(conexion1) # Obtiene la conexión y la libera, mientras haya tras conexiones activas termina de ser ocupada, otras pueden estar conctadas al mismo tiempo.
     conexion2 = Conexion.obtenerConexion()
+    Conexion.liberarConexion(conexion2)
     conexion3 = Conexion.obtenerConexion()
+    Conexion.liberarConexion(conexion3)
     conexion4 = Conexion.obtenerConexion()
     conexion5 = Conexion.obtenerConexion()
 

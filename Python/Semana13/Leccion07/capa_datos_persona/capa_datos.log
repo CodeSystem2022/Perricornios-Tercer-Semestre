@@ -1,0 +1,54 @@
+04:41:06 PM:DEBUG [logger_base.py:21] Mensaje a nivel Debug
+04:41:06 PM:INFO [logger_base.py:22] Mensaje a nivel Info
+04:41:06 PM:WARNING [logger_base.py:23] Mensaje a nivel Warning
+04:41:06 PM:ERROR [logger_base.py:24] Mensaje a nivel Error
+04:41:06 PM:CRITICAL [logger_base.py:25] Mensaje a nivel Critical
+01:46:07 PM:ERROR [conexion.py:30] Ocurrió un error: type object 'Conexion' has no attribute 'DATABASE'
+01:46:21 PM:ERROR [conexion.py:30] Ocurrió un error: type object 'Conexion' has no attribute 'DATABASE'
+01:46:37 PM:ERROR [conexion.py:30] Ocurrió un error: type object 'Conexion' has no attribute 'DATABASE'
+01:50:00 PM:DEBUG [conexion.py:27] Conexión Exitosa: <connection object at 0x105eeb970; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+01:50:00 PM:ERROR [conexion.py:46] Ocurrió un error: 'NoneType' object has no attribute 'cursor'
+03:36:40 PM:DEBUG [conexion.py:27] Conexi�n Exitosa: <connection object at 0x000001731A5C28A0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+03:36:40 PM:ERROR [conexion.py:46] Ocurri� un error: 'NoneType' object has no attribute 'cursor'
+03:38:26 PM:DEBUG [conexion.py:27] Conexi�n Exitosa: <connection object at 0x000002C88D4B28A0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+03:38:26 PM:DEBUG [conexion.py:43] Se abri� correctamente el cursor: <cursor object at 0x000002C88F22F840; closed: 0>
+04:51:00 PM:DEBUG [conexion.py:27] Conexi�n Exitosa: <connection object at 0x000002A5C746E790; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+04:51:00 PM:DEBUG [conexion.py:43] Se abri� correctamente el cursor: <cursor object at 0x000002A5C74C7840; closed: 0>
+04:51:00 PM:DEBUG [persona_dao.py:48] Persona Insertada: 
+            Id Persona: None,
+            Nombre: Pedro,Apellido: Romero,
+            Email: promero@mail.com
+        
+04:51:00 PM:DEBUG [persona_dao.py:56] Personas insertadas: 1
+05:08:06 AM:DEBUG [conexion.py:27] Conexi�n Exitosa: <connection object at 0x000002654E5B2790; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+05:08:06 AM:DEBUG [conexion.py:43] Se abri� correctamente el cursor: <cursor object at 0x000002654E607300; closed: 0>
+05:08:06 AM:DEBUG [persona_dao.py:48] Persona Insertada: 
+            Id Persona: None,
+            Nombre: Pedro,Apellido: Romero,
+            Email: promero@mail.com
+        
+05:08:06 AM:DEBUG [persona_dao.py:56] Personas insertadas: 1
+05:10:46 AM:DEBUG [conexion.py:27] Conexi�n Exitosa: <connection object at 0x0000022A992C2790; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+05:10:46 AM:DEBUG [conexion.py:43] Se abri� correctamente el cursor: <cursor object at 0x0000022A99317300; closed: 0>
+05:10:46 AM:DEBUG [persona_dao.py:48] Persona Insertada: 
+            Id Persona: None,
+            Nombre: Pedro,Apellido: Romero,
+            Email: promero@mail.com
+        
+05:10:46 AM:DEBUG [persona_dao.py:56] Personas insertadas: 1
+05:27:50 AM:DEBUG [conexion.py:27] Conexi�n Exitosa: <connection object at 0x0000021F12702790; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+05:27:50 AM:DEBUG [conexion.py:43] Se abri� correctamente el cursor: <cursor object at 0x0000021F12757300; closed: 0>
+05:27:50 AM:DEBUG [persona_dao.py:48] Persona Insertada: 
+            Id Persona: None,
+            Nombre: Omero,Apellido: Ramos,
+            Email: omeror@mail.com
+        
+05:27:50 AM:DEBUG [persona_dao.py:56] Personas insertadas: 1
+05:47:14 AM:DEBUG [conexion.py:27] Conexi�n Exitosa: <connection object at 0x00000204EBD52680; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+05:47:14 AM:DEBUG [conexion.py:43] Se abri� correctamente el cursor: <cursor object at 0x00000204EBDA7300; closed: 0>
+05:47:14 AM:DEBUG [persona_dao.py:58] Persona actualizada: 
+            Id Persona: 1,
+            Nombre: Juan Jos�,Apellido: Pena,
+            Email: jjpena@mail.com
+        
+05:47:14 AM:DEBUG [persona_dao.py:66] Personas actualidas: 1
