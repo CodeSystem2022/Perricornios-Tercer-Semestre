@@ -110,6 +110,17 @@ public class EstudianteDAO {
     }
 
     public static void main(String[] args) {
+        
+        
+        
+        
+        //Agregar estudiante
+        //var nuevoEstudiante = new Estudiante("Carlos","Lara","5495544223", "carlosl@mail.com");
+        //var agregado = estudianteDAO.agregarEstudiante(nuevoEstudiante);
+        //if(agregado)
+        //    System.out.println("Estudiante agregado: " + nuevoEstudiante);
+        //else
+        //    System.out.println("No se ha agregado estudiante: "+nuevoEstudiante);
 
         //Buscar por id
         var estudiante1 = new Estudiante(1);
