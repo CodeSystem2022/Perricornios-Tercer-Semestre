@@ -7,13 +7,13 @@
     <packaging>jar</packaging>
 
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-    <dependency>
+    <dependencies>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
         </dependency>
-    </dependency>
+    </dependencies>
 
     
     <properties>

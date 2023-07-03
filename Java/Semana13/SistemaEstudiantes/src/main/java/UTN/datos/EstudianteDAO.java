@@ -23,19 +23,19 @@ public class EstudianteDAO {
 
         //Creamos un objeto de tipo conexión
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiantes2022 ORDER BY estudiantes2022";
+        String sql = "SELECT * FROM estudiantes2022 ORDER BY idestudiantes2022";
         try { //Enviamos la consulta hacia la base de datos
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery(); // recibimos la ejecucion del querry que estamos enviando
             while (rs.next()) { //mientras tengamos registros para iterar va a serguir operando
                 var estudiante = new Estudiante();
-                estudiante.setIdEstudiante(rs.getInt("idestudiante2022"));
+                estudiante.setIdEstudiante(rs.getInt("idestudiantes2022"));
                 estudiante.setNombre(rs.getString("nombre"));
                 estudiante.setApellido(rs.getString("apellido"));
                 estudiante.setTelefono(rs.getString("telefono"));
                 estudiante.setEmail(rs.getString("email"));
                 //Falta agregarlo a la lista
-                estudiante.add(estudiante);
+                estudiantes.add(estudiante);
 
             }
         } catch (Exception e) {
@@ -43,30 +43,23 @@ public class EstudianteDAO {
         }
         finally {
             try {
-                con.close()
-            } catch (Exeption e){
+                con.close();
+            } catch (Exception e){
                 System.out.println("Ocurrio un error al cerrar la conexion: "+e.getMessage());
             }
             }
+        return estudiantes;
         }
         {//Fin finally
-        return estudiantes;
+
     }//Fin metodo listar
-
-    public static void main(String[] args) {
-        //Listar los estudiantes
-        var estudiantesDao = EstudianteDAO;
-        System.out.println("Listado de estudiantes: ");
-        List<Estudiante> estudiantes = estudiantesDao.listarEstudiantes();
-        estudiantes.forEach(System.out::println); //Funcion lambda para imprimir
-
-    }
 
         //Metodo por id -> find by id
     public boolean buscarEstudiantePorId(Estudiante estudiante){
         PreparedStatement ps;
         ResultSet rs;
-        Connection sql = "SELECT * FROM estudiantes2022 WHERE idestudiantes2022=?";
+        Connection con = getConnection();
+        String sql = "SELECT * FROM estudiantes2022 WHERE idestudiantes2022=?";
         try {
             ps = con.prepareStatement(sql);
             ps.setInt(1, estudiante.getIdEstudiante());
@@ -147,8 +140,8 @@ public class EstudianteDAO {
     }//Fin método modificarEstudiante hasta aca video 13
 
     public static void main(String[] args) {
-        
-        //var estudianteDao = new EstudianteDAO(); la comento porque no esta en donde debe
+        var estudianteDao = new EstudianteDAO();
+
         //Modificar estudiante - -video 14 Nadia
         var estudianteModificado = new Estudiante(1, "Juan Carlos", "Juarez", "5544663321", "juan@mail.com");
         var modificado = estudianteDao.modificarEstudiante(estudianteModificado);
@@ -156,8 +149,14 @@ public class EstudianteDAO {
         System.out.println("Estudiante modificado: "+estudianteModificado);
         else
         System.out.println("No se modifico el estudiante: "+estudianteModificado);
-        
-        
+
+        //Listar los estudiantes
+        System.out.println("Listado de estudiantes: ");
+        List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
+        estudiantes.forEach(System.out::println);//Funcion lambda para imprimir
+
+
+
         //Agregar estudiante
         //var nuevoEstudiante = new Estudiante("Carlos","Lara","5495544223", "carlosl@mail.com");
         //var agregado = estudianteDAO.agregarEstudiante(nuevoEstudiante);
@@ -168,14 +167,14 @@ public class EstudianteDAO {
 
         
         //Buscar por id
-        var estudiante1 = new Estudiante(1);
-        System.out.println("Estudiantes antes de la busqueda"+estudiante1);
-        var encontrado = estudianteDao.buscarEstudiantePorId(estudiante1);
-        if(encontrado){
-            System.out.println("Estudiante encontrado"+ estudiante1);
-        }else{
-            System.out.println("No se encontro el estudiante: "+ estudiante1.getIdEstudiante());
-        }
+        //var estudiante1 = new Estudiante(1);
+        //System.out.println("Estudiantes antes de la busqueda"+estudiante1);
+        //var encontrado = estudianteDao.buscarEstudiantePorId(estudiante1);
+        //if(encontrado){
+        //    System.out.println("Estudiante encontrado"+ estudiante1);
+        //}else{
+        //    System.out.println("No se encontro el estudiante: "+ estudiante1.getIdEstudiante());
+        //}
     }
 }
 
