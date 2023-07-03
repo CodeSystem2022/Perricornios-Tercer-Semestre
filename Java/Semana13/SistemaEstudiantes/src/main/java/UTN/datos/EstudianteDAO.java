@@ -103,11 +103,20 @@ public class EstudianteDAO {
             ps.setString(2, estudiante.getApellido());
             ps.setString(3, estudiante.getTelefono());
             ps.setString(4, estudiante.getEmail());
-
+            ps.execute();
+            return true;
         } catch(Exception e){
             System.out.println("Ocurrio un error al agregar estudiante: " + e.getMessage());
-        }
-    }
+        }//Fin catch
+        finally {
+            try {
+                con.close();
+            } catch (Exception e){
+                System.out.println("Error al cerrar la conexion: " + e.getMessage());
+            }//Fin catch
+        }//Fin finally
+        return false;
+    }//Fin metodo agregarEstudiante
 
     //Método para modificar estudiante:
     //Método para modificar estudiante- Parte13- Nadia
